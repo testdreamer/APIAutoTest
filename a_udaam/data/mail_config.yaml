@@ -1,0 +1,8 @@
+#bug邮件的收件人
+bug_mail_addressee: ['huangyw@casking.com.cn']
+#bug邮件的抄送人
+bug_mail_cc: []
+#测试报告邮件的收件人
+result_mail_addressee: ['huangyw@casking.com.cn']
+#测试报告邮件的抄送人
+result_mail_cc: ['liny@casking.com.cn','liyj@casking.com.cn','wub@casking.com.cn','libb@casking.com.cn','xiaojc@casking.com.cn']

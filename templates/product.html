@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% extends 'common.html' %}
+    {% block title %}产品页面 {% endblock %}
+</head>
+<body>
+   联影自动化测试平台
+<ul>
+    <p>传递过来的值为{{data}}</p>
+<p><a href="/ ">回到首页</a></p>   #回首页超链接
+<p> <a href="{{ url_for('newspage') }}">去看新闻页</a></p>   #产品页链接
+</ul>
+  <hr>
+   <p>这是product页面:</p>
+   <br>
+  {{data}}
+</body>
+</html>

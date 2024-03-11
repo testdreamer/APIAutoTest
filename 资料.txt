@@ -1,0 +1,214 @@
+C:\Software\python38\Scripts\pytest.exe runMain.py --html=.\Reports\TestReport_%BUILD_NUMBER%.html
+
+ 在/ etc / sysconfig / Jenkins位置的Jenkins文件中执行以下更改。在JENKINS_JAVA_OPTIONS参数中添加了-Dhudson.spool-svn = true。 – Nirbhay Singh 16小时前
+1个 JENKINS_JAVA_OPTIONS =“ -Dhudson.spool-svn = true”在位置/ etc / sysconfig / jenkins文件中
+
+#!/bin/bash
+python3 /root/.jenkins/workspace/Udaam-ApiautoTest/runMain_udaam.py --html=./TestReport_%BUILD_NUMBER%.html
+exit
+
+关闭Jenkins
+http://localhost:8080/exit
+1
+重启Jenkies
+http://localhost:8080/restart
+1
+重新加载配置信息
+http://localhost:8080/reload
+
+192.168.13.197 autotestserver
+192.168.13.192 bogon.newhealth.com.cn
+
+禅道用户访问验证
+zentao/2MFLut2dcdc
+
+身份认证系统开发环境
+http://192.168.13.148:10020/udaam-ui
+superAdmin/superAdmin
+身份认证系统测试环境
+http://192.168.13.159:10041/udaam-ui/login
+superAdmin/superAdmin
+
+单独给我用的禅道
+禅道测试：http://127.0.0.1/zentao/bug-browse-1.html?tid=vmz9cr6y
+账号/密码：admin/Casking@1234
+数据库地址：127.0.0.1:3306/zentao
+数据库账号/密码：root/123456
+
+自动化测试服务器
+Centos7.9      192.168.13.197  root/UDtest@1234
+
+192.168.13.192
+root/lw@2019
+
+http://192.168.13.192:8080/jenkins/login?from=%2Fjenkins%2F
+zpt/test@2020
+
+SVN地址:https://192.168.13.50:55000/svn/TEST
+SVN账号密码:zhaopt/Casking6666zhaopt
+
+svn checkout --username=zhaopt --password=Casking6666zhaopt
+https://192.168.13.50:55000/svn/TEST/auto_test/reliangApiTest
+zhaopt/Casking6666zhaopt
+
+云帮
+http://192.168.13.159:10000/#/enterprise/51148e0227e3b832d0b2d2ba70d59345/index
+testuser/naichabaoweizhan
+
+绿盟
+https://192.168.8.250
+账号：admin /nsfocus@123
+
+开通网络的
+http://192.168.13.2/
+账号:赵鹏天
+密码:zpt123456789
+
+pypi源:
+pip install ddddocr -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install briefcase -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
+
+https://github.com/
+zhaopengtian
+zpt1234567890?
+
+exbjjmbjshezbdga
+QQ授权码:loffussjyccybfhh
+163的授权码:KPSBWBGPILGUXHBR
+
+
+18476365445
+C:\ProgramData\Oracle\Java\javapath;%SystemRoot%\system32;%SystemRoot%;%SystemRoot%\System32\Wbem;%SYSTEMROOT%\System32\WindowsPowerShell\v1.0\;E:\soft\Git\cmd;E:\env\Android\Sdk\platform-tools;E:\env\node\Yarn\bin\;E:\env\CMake\bin;%JAVA_HOME%\bin;%MAVEN_HOME%\bin;E:\soft\Tesseract-OCR;%JAVA_HOME%\bin;%JMETER_HOME%\bin;E:\env\node\nodejs\;D:\allure-2.11.0\bin
+
+
+大家好，本人代缴深圳社保公积金（深户和非深户都可以），有需要办理学历的,民教网可查,不需要学习,周期短;有需要办公司印章 都可以联系我：13724288994，微信同号。
+
+深户一挡五险：1340
+非深户一挡五险：1316
+非深户二挡五险：840
+非深户三挡五险：817
+2360基数公积金：364
+
+公积金（5+5）%缴存比例
+一、2360基数  、本金236元、手续费28元，公司费用100,一共支付364元
+二、3000基数  、本金300元、手续费28元，公司费用117,一共支付445元
+三、5000基数  、本金500元、手续费28元，公司费用122,一共支付650元
+四、10000基数  、本金1000元、手续费28元，公司费用127,一共支付1155元
+五、15654基数  、本金1565.4元、手续费28元，公司费用132,一共支付1726元
+六、20259基数  、本金2025.9元、手续费28元，公司费用137,一共支付2191元
+七、25044基数  、本金2504.4元、手续费28元，公司费用142,一共支付2674元
+八，31938基数  、本金3193.8元、 手续费28元、公司费用147,一共支付3369元。
+（12+12）%缴存比例
+九、20000基数  、本金4800元、手续费28元，公司费用552,一共支付5380元
+十、20834基数  、本金5000.1元、手续费28元，公司费用575,一共支付5600元
+十一、22440基数  、本金5385.6元、手续费28元，公司费用612,一共支付6025元
+本金为每月到账金额，您看下需要办理哪种
+
+公积金（5+5）%缴存比例
+一、2360基数  、364元
+二、3000基数  、445元
+三、5000基数  、650元
+四、10000基数  、1155元
+五、15654基数  、1726元
+六、20259基数  、2191元
+七、25044基数  、2674元
+八，31938基数  、3369元。
+（12+12）%缴存比例
+九、20000基数  、5380元
+十、20834基数  、5600元
+十一、22440基数  、6025元
+代缴深圳社保:
+服务费是20，公司办理费100
+
+代缴深圳社保:
+然后其他的养老保险542.8，医疗保险二档62.62，生育保险10.62，失业保险23.6，工伤保险3.3，五险合计673.28，残保金58.1
+
+代缴深圳社保:
+合计：731
+
+
+
+大家好，打扰一下，如果有需要缴纳深圳社保或公积金的小伙伴可以找我，我可以缴纳深圳社保公积金，13724288994（微信同步）
+
+需要姓名，身份证，电脑号，公积金，学历，手机号
+
+姓名：夏爱晞，
+身份证：342622199011266157，
+电脑号：642527493，
+公积金：，
+学历：大专
+，手机号： 15270825748
+
+365221937
+zpt123456789
+
+
+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
+
+
+深户一挡五险一金（最低）：1618
+非深户一挡五险一金：1594
+二档五险一金（最低）：1115
+三档五险一金（最低）：1086
+http://localhost:8080/job/reliang/_2a_2a_2a_2a_e68ea5_e58fa3_e887aa_e58aa8_e58c96_e6b58b_e8af95_e68aa5_e5918a/
+
+
+<!DOCTYPE html>    
+<html>    
+<head>    
+<meta charset="UTF-8">    
+<title>${ENV, var="JOB_NAME"}-第${BUILD_NUMBER}次构建日志</title>    
+</head>    
+    
+<body leftmargin="8" marginwidth="0" topmargin="8" marginheight="4"    
+    offset="0">    
+    <table width="95%" cellpadding="0" cellspacing="0"  style="font-size: 11pt; font-family: Tahoma, Arial, Helvetica, sans-serif">    
+        <tr>    
+            本邮件由系统自动发出，无需回复！<br/>            
+            大家好，以下为 ${PROJECT_NAME } 项目构建信息</br> 
+            <td><font color="#CC0000">构建结果 - ${BUILD_STATUS}</font></td>   
+        </tr>    
+        <tr>    
+            <td><br />    
+            <b><font color="#0B610B">构建信息</font></b>    
+            <hr size="2" width="100%" align="center" /></td>    
+        </tr>    
+        <tr>    
+            <td>    
+                <ul>    
+                    <li>项目名称 ： ${PROJECT_NAME}</li>    
+                    <li>构建编号 ： 第${BUILD_NUMBER}次构建</li>    
+                    <li>触发原因： ${CAUSE}</li>    
+                    <li>构建状态： ${BUILD_STATUS}</li>    
+                    <li>构建日志： <a href="${BUILD_URL}console">${BUILD_URL}console</a></li>    
+                    <li>构建URL： <a href="${BUILD_URL}">${BUILD_URL}</a></li>    
+                    <li>测试报告： <a href="${PROJECT_URL}HTML_20Report">${PROJECT_URL}HTML_20Report</a></li>    
+                </ul>    
+
+<h4><font color="#0B610B">失败用例</font></h4>
+<hr size="2" width="100%" />
+$FAILED_TESTS<br/>
+
+<h4><font color="#0B610B">最近提交(#${GIT_REVISION})</font></h4>
+<hr size="2" width="100%" />
+<ul>
+${CHANGES_SINCE_LAST_SUCCESS, reverse=true, format="%c", changesFormat="<li>%d [%a] %m</li>"}
+</ul>
+详细提交: <a href="${PROJECT_URL}changes">${PROJECT_URL}changes</a><br/>
+
+            </td>    
+        </tr>    
+    </table>    
+</body>    
+</html>
+
+{"orgId":"ebc4c95ebab9917bf13fb4872572c0cc","systemId":"c8d81724035294a951ac19a1f4e9f90a","sourceId":"bff3772a597b33037538531b0d65e8d3"}
+
+
+
+
+
+
+地址:https://192.168.8.234
+web界面:admin/Nsf0cus@123
+串口界面:conadmin/conadmin

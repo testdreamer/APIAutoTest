@@ -1,0 +1,12 @@
+#bug邮件的收件人
+bug_mail_addressee: ['zhaopt@casking.com.cn']
+#bug邮件的抄送人(如果有多个邮箱用","分割)
+bug_mail_cc: []
+#禅道bug提交人(格式为姓小写全拼,名取首字母小写)
+zentao_bug_commit: zhaopt
+#禅道bug指派人(格式为姓小写全拼,名取首字母小写)
+zentao_bug_assign: xiaojc
+#测试报告邮件的收件人
+result_mail_addressee: ['wangts@casking.com.cn']
+#测试报告邮件的抄送人(如果有多个邮箱用","分割)
+result_mail_cc: ['tianxh@casking.com.cn']

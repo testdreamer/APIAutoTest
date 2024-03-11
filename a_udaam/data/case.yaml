@@ -1,0 +1,6 @@
+查询资源列表,正确:
+  pageNum: 1
+  pageSize: 10
+  systemId:
+  name:
+  pid:

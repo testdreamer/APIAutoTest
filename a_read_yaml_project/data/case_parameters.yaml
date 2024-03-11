@@ -1,0 +1,669 @@
+CSAM医院信息查询,正确:
+  orgId:
+  orgName:
+CSAM科室信息查询,正确:
+  orgId: 582
+  hisCode:
+  deptId:
+  deptClass:
+CSAM科室信息查询,orgId必填项为空:
+  orgId:
+  hisCode:
+  deptId:
+  deptClass:
+CSAM科室信息查询,orgId为0（全局科室):
+  orgId: 0
+  hisCode:
+  deptId:
+  deptClass:
+CSAM科室信息查询,123为不存在的医院ID:
+  orgId: 123
+  hisCode:
+  deptId:
+  deptClass:
+CSAM科室信息查询,660为中医科,orgId必填项为空:
+  orgId:
+  hisCode:
+  deptId: 660
+  deptClass:
+CSAM科室信息查询,582为龙岗人民医院ID,660为中医科:
+  orgId: 582
+  hisCode:
+  deptId: 660
+  deptClass:
+CSAM科室信息查询,orgId必填项为-1:
+  orgId: -1
+  hisCode:
+  deptId:
+  deptClass:
+CSAM科室信息查询,orgId必填项超长:
+  orgId: 9999999999
+  hisCode:
+  deptId:
+  deptClass:
+CSAM排班信息查询,正确:
+  orgId: 582
+  deptId: 660
+  empId:
+  skdDate:
+  beginDate:
+  endDate:
+  categFlag:
+  hisCode:
+  empCode:
+CSAM全院科室排班信息查询,正确:
+  orgId: 582
+  deptId: 0
+  empId:
+  skdDate:
+  beginDate:
+  endDate:
+  categFlag:
+  hisCode:
+  empCode:
+CSAM科室排班信息查询,orgId,deptId必填项为空:
+  orgId:
+  deptId:
+  empId:
+  skdDate:
+  beginDate:
+  endDate:
+  categFlag:
+  hisCode:
+  empCode:
+CSAM科室排班信息查询,deptId必填项缺失:
+  orgId: 582
+  deptId:
+  empId:
+  skdDate:
+  beginDate:
+  endDate:
+  categFlag:
+  hisCode:
+  empCode:
+CSAM科室排班信息查询,orgId必填项缺失:
+  orgId:
+  deptId: 660
+  empId:
+  skdDate:
+  beginDate:
+  endDate:
+  categFlag:
+  hisCode:
+  empCode:
+CSAM科室排班信息查询,759为神经内科未排班:
+  orgId: 582
+  deptId: 759
+  empId:
+  skdDate:
+  beginDate:
+  endDate:
+  categFlag:
+  hisCode:
+  empCode:
+CSAM科室排班信息查询,deptId为0全院科室:
+  orgId: 582
+  deptId: 0
+  empId:
+  skdDate:
+  beginDate:
+  endDate:
+  categFlag:
+  hisCode:
+  empCode:
+CSAM科室排班信息查询,orgId为0全局医院:
+  orgId: 0
+  deptId: 660
+  empId:
+  skdDate:
+  beginDate:
+  endDate:
+  categFlag:
+  hisCode:
+  empCode:
+CSAM科室排班信息查询,orgId和deptid均为0全局:
+  orgId: 0
+  deptId: 0
+  empId:
+  skdDate:
+  beginDate:
+  endDate:
+  categFlag:
+  hisCode:
+  empCode:
+CSAM科室排班信息查询,13706医生未排班:
+  orgId: 582
+  deptId: 660
+  empId: 13706
+  skdDate:
+  beginDate:
+  endDate:
+  categFlag:
+  hisCode:
+  empCode:
+CSAM科室排班信息查询,skdDate出诊日期为当日:
+  orgId: 582
+  deptId: 660
+  empId:
+  skdDate: '2022-11-30'
+  beginDate:
+  endDate:
+  categFlag:
+  hisCode:
+  empCode:
+CSAM科室排班信息查询,beginDate出诊开始日期为当日:
+  orgId: 582
+  deptId: 660
+  empId:
+  skdDate:
+  beginDate: '2022-11-30'
+  endDate:
+  categFlag:
+  hisCode:
+  empCode:
+CSAM科室排班信息查询,endDate出诊开始日期为当日:
+  orgId: 582
+  deptId: 660
+  empId:
+  skdDate:
+  beginDate:
+  endDate: '2022-11-30'
+  categFlag:
+  hisCode:
+  empCode:
+CSAM号源信息查询,正确:
+  orgId: 582
+  deptId: 660
+  empId: 14456
+  skdSno: 157233
+  hisCode:
+  empCode:
+CSAM号源信息查询,orgId必填项为空:
+  orgId:
+  deptId: 660
+  empId: 14456
+  skdSno: 157233
+  hisCode:
+  empCode:
+CSAM号源信息查询,deptId必填项为空:
+  orgId: 582
+  deptId:
+  empId: 14456
+  skdSno: 157233
+  hisCode:
+  empCode:
+CSAM号源信息查询,skdSno必填项为空:
+  orgId: 582
+  deptId: 660
+  empId: 14456
+  skdSno:
+  hisCode:
+  empCode:
+CSAM号源信息查询,orgId必填项为0,全局医院:
+  orgId: 0
+  deptId: 660
+  empId: 14456
+  skdSno: 157233
+  hisCode:
+  empCode:
+CSAM号源信息查询,deptId必填项为0,全院科室:
+  orgId: 582
+  deptId: 0
+  empId: 14456
+  skdSno: 157233
+  hisCode:
+  empCode:
+CSAM号源信息查询,empId必填项为0,全科医生:
+  orgId: 582
+  deptId: 660
+  empId: 14456
+  skdSno: 157233
+  hisCode:
+  empCode:
+CSAM号源信息查询,skdSno必填项为0,医生全部号源:
+  orgId: 582
+  deptId: 660
+  empId: 14456
+  skdSno: 0
+  hisCode:
+  empCode:
+CSAM号源信息查询,skdSno排班号已失效:
+  orgId: 582
+  deptId: 660
+  empId: 14456
+  skdSno: 157220
+  hisCode:
+  empCode:
+CSAM号源信息查询,123不存在的orgId:
+  orgId: 123
+  deptId: 660
+  empId: 14456
+  skdSno: 157233
+  hisCode:
+  empCode:
+CSAM号源信息查询,123为不存在的deptId:
+  orgId: 582
+  deptId: 123
+  empId: 14456
+  skdSno: 157233
+  hisCode:
+  empCode:
+CSAM号源信息查询,123为不存在的empId:
+  orgId: 582
+  deptId: 660
+  empId: 123
+  skdSno: 157233
+  hisCode:
+  empCode:
+CSAM号源信息查询,123为不存在的skdSno:
+  orgId: 582
+  deptId: 660
+  empId: 14456
+  skdSno: 123
+  hisCode:
+  empCode:
+CSAM号源信息查询,611为龙岗区中医院的orgId,其他必填项为人民医院数据:
+  orgId: 611
+  deptId: 660
+  empId: 14456
+  skdSno: 157233
+  hisCode:
+  empCode:
+CSAM号源信息查询,656为口腔科HIS科室编码:
+  orgId: 582
+  deptId: 660
+  empId: 14456
+  skdSno: 157233
+  hisCode: 656
+  empCode:
+CSAM号源信息查询,123为不存在的HIS科室编码:
+  orgId: 582
+  deptId: 660
+  empId: 14456
+  skdSno: 157233
+  hisCode: 123
+  empCode:
+CSAM号源信息查询,41为中医科的HIS科室编码:
+  orgId: 582
+  deptId: 660
+  empId: 14456
+  skdSno: 157233
+  hisCode:
+  empCode: '0154'
+CSAM号源信息查询,0154医生在empCode人员编码:
+  orgId: 582
+  deptId: 660
+  empId: 14456
+  skdSno: 157233
+  hisCode: 41
+  empCode:
+CSAM号源信息查询,123为不存在的empCode人员编码:
+  orgId: 582
+  deptId: 660
+  empId: 14456
+  skdSno: 157233
+  hisCode:
+  empCode: 123
+CSAM预约申请,正确:
+  mobile: '18673964760'
+  empId: 14456
+  deptId: 660
+  idcard: '612127197512020033'
+  timeBegin: 22:50
+  sex: '2'
+  orgId: 582
+  pname: 张杰
+  payChargeType: '1'
+  skdSno: '157228'
+  idcode: '01'
+  timeEnd: 23:00
+  sdate: '2022-11-30'
+  srcDetlId: '3704845'
+  birthday: '1988-09-01'
+CSAM预约申请,当天科室中已有一个有效订单:
+  mobile: '18673964760'
+  empId: 14456
+  deptId: '660'
+  idcard: '612127197512020033'
+  timeBegin: 22:40
+  sex: '2'
+  orgId: 582
+  pname: 张杰
+  payChargeType: '1'
+  skdSno: '157228'
+  idcode: '01'
+  timeEnd: 22:50
+  sdate: '2022-11-29'
+  srcDetlId: '3704801'
+  birthday: '1988-09-01'
+CSAM预约申请,当天科室中已有一个有效订单,换个时间:
+  mobile: '18673964760'
+  empId: 14456
+  deptId: '660'
+  idcard: '372522196312050743'
+  timeBegin: 22:40
+  sex: '2'
+  orgId: 582
+  pname: 张杰
+  payChargeType: '1'
+  skdSno: '157228'
+  idcode: '01'
+  timeEnd: 22:50
+  sdate: '2022-11-30'
+  srcDetlId: '3704844'
+  birthday: '1988-09-01'
+CSAM预约申请,必填项为空:
+  mobile:
+  empId:
+  deptId:
+  idcard:
+  timeBegin:
+  sex:
+  orgId:
+  pname:
+  payChargeType:
+  skdSno:
+  idcode:
+  timeEnd:
+  sdate:
+  srcDetlId:
+  birthday:
+CSAM预约申请,任意必填项为空:
+  mobile:
+  empId: 14456
+  deptId: '660'
+  idcard: '372522196312050743'
+  timeBegin: 22:40
+  sex: '2'
+  orgId: 582
+  pname: 张杰
+  payChargeType: '1'
+  skdSno: '157228'
+  idcode: '01'
+  timeEnd: 22:50
+  sdate: '2022-11-28'
+  srcDetlId: '3704758'
+  birthday: '1988-09-01'
+CSAM预约申请,已有订单换手机号码,其他参数不变:
+  mobile: 1333333333
+  empId: 14456
+  deptId: '660'
+  idcard: '612127197512020033'
+  timeBegin: 22:40
+  sex: '2'
+  orgId: 582
+  pname: 张杰
+  payChargeType: '1'
+  skdSno: '157228'
+  idcode: '01'
+  timeEnd: 22:50
+  sdate: '2022-11-29'
+  srcDetlId: '3704801'
+  birthday: '1988-09-01'
+CSAM预约申请,身份证号码有误:
+  mobile: 13724288888
+  empId: 14456
+  deptId: '660'
+  idcard: '111111111111111111'
+  timeBegin: 22:40
+  sex: '2'
+  orgId: 582
+  pname: 张杰
+  payChargeType: '1'
+  skdSno: '157228'
+  idcode: '01'
+  timeEnd: 22:50
+  sdate: '2022-11-29'
+  srcDetlId: '3704801'
+  birthday: '1988-09-01'
+CSAM预约申请,换证件号:
+  mobile: 13724288888
+  empId: 14456
+  deptId: '660'
+  idcard: '339011197510120500'
+  timeBegin: 22:40
+  sex: '2'
+  orgId: 582
+  pname: 张杰
+  payChargeType: '1'
+  skdSno: '157228'
+  idcode: '01'
+  timeEnd: 22:50
+  sdate: '2022-11-29'
+  srcDetlId: '3704801'
+  birthday: '1988-09-01'
+CSAM预约申请,换姓名:
+  mobile: 13724288888
+  empId: 14456
+  deptId: '660'
+  idcard: '339011197510120500'
+  timeBegin: 22:40
+  sex: '2'
+  orgId: 582
+  pname: 李军
+  payChargeType: '1'
+  skdSno: '157228'
+  idcode: '01'
+  timeEnd: 22:50
+  sdate: '2022-11-29'
+  srcDetlId: '3704801'
+  birthday: '1988-09-01'
+CSAM预约申请,换证件类型为03护照,换证件号:
+  mobile: 13724288888
+  empId: 14456
+  deptId: '660'
+  idcard: '1234567890'
+  timeBegin: 22:40
+  sex: '2'
+  orgId: 582
+  pname: 李军
+  payChargeType: '1'
+  skdSno: '157228'
+  idcode: '03'
+  timeEnd: 22:50
+  sdate: '2022-11-29'
+  srcDetlId: '3704801'
+  birthday: '1988-09-01'
+CSAM预约申请,号源已过期:
+  mobile: 13724288888
+  empId: 14456
+  deptId: 660
+  idcard: '330625195801080813'
+  timeBegin: 08:00
+  sex: '2'
+  orgId: 582
+  pname: 李军
+  payChargeType: '1'
+  skdSno: 157233
+  idcode: '01'
+  timeEnd: 09:00
+  sdate: '2022-11-30'
+  srcDetlId: '3704803'
+  birthday: '1988-09-01'
+CSAM预约申请,就诊日期为0:
+  mobile: 13724288888
+  empId: 14456
+  deptId: 660
+  idcard: '372522196312050743'
+  timeBegin: 22:40
+  sex: '2'
+  orgId: 582
+  pname: 李军
+  payChargeType: '1'
+  skdSno: '157228'
+  idcode: '01'
+  timeEnd: 22:50
+  sdate: '0'
+  srcDetlId: '3704801'
+  birthday: '1988-09-01'
+CSAM预约申请,当天科室已有有效订单,换医生预约:
+  mobile: '18673964760'
+  empId: 14455
+  deptId: '660'
+  idcard: '612127197512020033'
+  timeBegin: 22:40
+  sex: '2'
+  orgId: 582
+  pname: 张杰
+  payChargeType: '1'
+  skdSno: '157228'
+  idcode: '01'
+  timeEnd: 22:50
+  sdate: '2022-11-29'
+  srcDetlId: '3704801'
+  birthday: '1988-09-01'
+CSAM预约申请,当天科室已有有效订单,换科室预约:
+  mobile: 13724288888
+  empId: 14583
+  deptId: '656'
+  idcard: '612127197512020033'
+  timeBegin: 23:00
+  sex: '2'
+  orgId: 582
+  pname: 李军
+  payChargeType: '1'
+  skdSno: 156422
+  idcode: '01'
+  timeEnd: 23:30
+  sdate: '2022-11-30'
+  srcDetlId: '3681773'
+  birthday: '1988-09-01'
+CSAM预约申请,出生日期为0:
+  mobile: 13724288888
+  empId: 14456
+  deptId: 660
+  idcard: '372522196312050743'
+  timeBegin: 22:40
+  sex: '2'
+  orgId: 582
+  pname: 李军
+  payChargeType: '1'
+  skdSno: '157228'
+  idcode: '01'
+  timeEnd: 22:50
+  sdate: '2022-11-29'
+  srcDetlId: '3704801'
+  birthday: '0'
+CSAM预约申请,出生日期和预约日期相同:
+  mobile: 13724288888
+  empId: 14456
+  deptId: 660
+  idcard: '372522196312050743'
+  timeBegin: 22:50
+  sex: '2'
+  orgId: 582
+  pname: 李军
+  payChargeType: '1'
+  skdSno: '157228'
+  idcode: '01'
+  timeEnd: 23:00
+  sdate: '2022-11-30'
+  srcDetlId: '3704845'
+  birthday: '2022-11-30'
+CSAM预约订单取消,必填项为空:
+  orgId:
+  skdSno:
+  empId:
+  orgDeptId:
+  hisOrderId:
+  sdate:
+CSAM预约订单取消,任意必填项为空:
+  orgId:
+  skdSno: 157232
+  empId: 14456
+  orgDeptId: 660
+  hisOrderId: '62233300037'
+  sdate: '2022-11-29'
+CSAM预约订单取消,orgId为0:
+  orgId: 0
+  skdSno: 157232
+  empId: 14456
+  orgDeptId: 660
+  hisOrderId: '62233300037'
+  sdate: '2022-11-29'
+CSAM预约订单取消,skdSno为0:
+  orgId: 582
+  skdSno: '0'
+  empId: 14456
+  orgDeptId: '660'
+  hisOrderId: '62233300045'
+  sdate: '2022-11-29'
+CSAM预约订单取消,empId为0:
+  orgId: 582
+  skdSno: '157228'
+  empId: '0'
+  orgDeptId: '660'
+  hisOrderId: '62273300047'
+  sdate: '2022-11-29'
+CSAM预约订单取消,orgDeptId为0:
+  orgId: 582
+  skdSno: '157228'
+  empId: 14456
+  orgDeptId: '0'
+  hisOrderId: '62273300048'
+  sdate: '2022-11-29'
+CSAM预约订单取消,hisOrderId为0:
+  orgId: 582
+  skdSno: '157228'
+  empId: 14456
+  orgDeptId: 660
+  hisOrderId: '0'
+  sdate: '2022-11-29'
+CSAM预约订单取消,sdate为0:
+  orgId: 582
+  skdSno: '157228'
+  empId: 14456
+  orgDeptId: '660'
+  hisOrderId: '0'
+  sdate: '2022-11-29'
+CSAM预约订单取消,非必填项正确:
+CSAM预约订单取消,正确:
+  orgId: 582
+  skdSno: 157233
+  empId: 14456
+  orgDeptId: 660
+  hisOrderId: '62233400025'
+  sdate: '2022-11-30'
+CSAM预约订单取消,订单已被取消:
+  orgId: 582
+  skdSno: '157228'
+  empId: 14456
+  orgDeptId: '660'
+  hisOrderId: '62273300042'
+  sdate: '2022-11-29'
+CSAM患者历史预约订单查询,正确:
+  timeEnd: '2022-11-30 17:35:52'
+  idcard: '612127197512020033'
+  timeBegin: '2022-10-23 00:00:00'
+CSAM患者历史预约订单查询,用订单号查询:
+  timeEnd: '2022-11-29 18:47:18'
+  orderCode: '62233300066'
+  timeBegin: '2022-10-23 00:00:00'
+CSAM患者历史预约订单查询,同时用证件号和订单号查询:
+  timeEnd: '2022-11-29 18:52:49'
+  orderCode: '62273300067'
+  timeBegin: '2022-10-23 00:00:00'
+  idcard: '612127196503187814'
+CSAM患者历史预约订单查询,必填项为空:
+  timeEnd: ''
+  timeBegin:
+  idcard: ''
+CSAM患者历史预约订单查询,输入的用户无订单号:
+  timeEnd: '2022-11-29 19:07:24'
+  timeBegin:
+  orderCode: ''
+CSAM医生预约订单查询,正确:
+  orgId: 582
+  empId: 14456
+  deptId: 660
+  hisCode:
+  empCode:
+  beginTime:
+  endTime:
+  skdSno:
+CSAM对接广东省医保预支付信息,正确:
+  insuranceCpNo:
+  payMode: '9'
+  insuranceType:
+  orgId: '582'
+  hisOrderId: '62233400025'

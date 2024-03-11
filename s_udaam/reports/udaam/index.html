@@ -1,0 +1,1133 @@
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>报表</title>
+<link rel="stylesheet" href="reportfiles/css/ns_report.css" />
+<link rel="stylesheet" href="reportfiles/css/ns_report_rsas.css" />
+<link rel="stylesheet" href="reportfiles/js/datepicker/skin/WdatePicker.css" />
+<script src="reportfiles/js/jquery.js"></script>
+<script src="reportfiles/js/common.js"></script>
+<script src="reportfiles/js/datepicker/WdatePicker.js"></script>
+</head>
+<body>
+<div id="report" class="wrapper_w800">
+  <div class="report_tip"></div>
+  <div  id="head"  class="report_title">
+    <h1>绿盟科技&#34;远程安全评估系统&#34;安全评估报告</h1>
+    <span class="note">&nbsp;</span> </div>
+  <!--head end,catalog start-->
+  <div id="catalog">
+    <div class="report_h1">目录</div>
+  </div>
+  <div id="content"><div class="report_h report_h1">1.综述信息</div>
+<div class="report_content"><div class="report_h report_h2" id="title00">1.1任务信息</div><div>
+    <table class="report_table">
+      <tbody>
+        <tr class="odd" >
+          <th width="120" style="vertical-align:middle">网络风险</th>
+          <td style="padding:6px;"><img align='absmiddle' src='reportfiles/images/b_low.gif' title='比较安全'></img><span class="level_danger middle" style='color:#396DC3'>比较安全（2.1分）</span></td>
+        </tr>
+      </tbody>
+    </table>
+    <table width="100%">
+      <tr>
+        <td width="50%" valign='top'>
+        <table class="report_table plumb">
+            <tbody><tr class="odd" >
+                <th width="120">任务名称</th>
+                <td>扫描[http://192.168.13.159:20086/udaam-ui/]</td>
+              </tr>
+              <tr class="even" >
+                <th width="120">扫描目标</th>
+                <td>
+
+http://192.168.13.159:20086/udaam-ui/
+</td>
+              </tr>
+              <tr class="odd" >
+                <th>任务类型</th>
+                <td>WEB应用扫描</td>
+              </tr>
+              <tr class="even" >
+                <th width="120">任务状态</th>
+                <td>扫描完成</td>
+              </tr><tr class="odd">
+                  <th>漏洞扫描模板</th>
+                  <td>自动匹配扫描</td>
+              </tr><tr class="even" >
+                <th>下达任务用户</th>
+                <td>admin</td>
+              </tr>
+              <tr class="odd" >
+                <th>任务数据来源</th>
+                <td>本地扫描</td>
+              </tr>
+              <tr class="even" >
+                <th>任务说明</th>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+          </td>
+        <td width="20px"></td>
+        <td width="50%" valign='top'>
+          <table class="report_table plumb">
+            <tbody><tr class="odd">
+                  <th width="120px" >信息统计</th>
+                  <td>
+                  已爬取文件数：10<br />
+                  有漏洞文件数：3<br />
+                  已扫描链接数：8<br />
+                  已爬取链接数：64<br />
+                  </td>
+              </tr>
+              <tr class="even">
+                  <th width="120px" >域名统计</th>
+                  <td>
+                  已扫描域名数：1<br />
+                  非常危险域名数：0</td>
+              </tr>
+              <tr class="odd">
+                <th width="120px" >时间统计</th>
+                <td>
+                    开始：2022-11-10 18:27:55<br />
+                    结束：2022-11-10 18:32:23<br />
+                    历时：4分28秒</td>
+              </tr>
+              <tr class="even">
+                  <th>版本信息</th>
+                  <td>
+                  系统版本：V6.0R04F00<br />
+                  Web插件版本：V6.0R02F00.1902<br />
+                  </td>
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div><div class="report_h report_h2" id="title01">1.2风险分布</div>
+  <div>
+    <div class="report_h report_h3">1.2.1页面风险级别分布</div>
+    <div class="center"><img  src="reportfiles/images/ede8500fe1b11448aaba30316e5df250.png"></img></div>
+    <div class="report_h report_h3">1.2.2漏洞高中低风险分布</div>
+    <div class="center"><img src="reportfiles/images/18de6d9e247dec931bd85176666dc5c7.png"></img></div></div><div class="report_h report_h2" id="title02">1.3风险分类统计</div>
+  <div><div class="report_h report_h3" id="title03">1.3.1风险类型</div>
+    <div><table width="100%">
+          <tbody>
+          <tr>
+              <td align="middle">
+                  <div class="center"><img width="500px" src="reportfiles/images/1ce193fab8e1b8e7a465110ebabef521.png"></div>
+              </td>
+          </tr>
+          <tr>
+              <td width="400px" valign="middle">
+                  <table class="report_table">
+                  <thead>
+                  <tr class="second_title" >
+                      <th>威胁分类</th>
+                      <th width="50px">高风险</th>
+                      <th width="50px">中风险</th>
+                      <th width="50px">低风险</th>
+                      <th width="50px">总计</th>
+                  </tr>
+                  </thead>
+                  <tbody><tr class="odd">
+                      <td>信息泄露类型:信息泄露</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>8</td>
+                      <td>8</td>
+                      </tr><tr class="even">
+                      <td>客户端攻击类型:内容欺骗</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>1</td>
+                      <td>1</td>
+                      </tr><tr class="odd">
+                      <td>其他</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>1</td>
+                      <td>1</td>
+                      </tr></tbody>
+                  <tfoot>
+                      <tr>
+                      <td>合计</td>
+                      <td>0</td>
+                      <td>0</td>
+                      <td>10</td>
+                      <td>10</td>
+                      </tr>
+                  </tfoot>
+              </table>
+              </td>
+          </tr>
+          </tbody>
+        </table></div><div class="report_h report_h3" id="title03">1.3.2高危漏洞最多页面TOP10</div>
+    <div></div></div></div> <div class="report_h report_h1">2.站点列表</div>
+<div class="report_content">
+  <div class="report_h report_h2" id="title00">2.1站点风险等级列表</div>
+  <div>
+    <table class="report_table">
+        <thead>
+        <tr class="first_title">
+            <th>站点名称</th>
+            <th width="100px">已扫描链接数</th>
+            <th width="120px">扫描耗时</th>
+            <th width="50px">高风险（个）</th>
+            <th width="50px">中风险（个）</th>
+            <th width="50px">低风险（个）</th>
+            
+            <th width="50px">已验证（个）</th>
+            <th width="50px">未验证（个）</th>
+            
+            <th width="50px">风险值</th>
+        </tr>
+        <tbody><tr class="odd">
+            <td>
+            <img align='absmiddle' src='reportfiles/images/d_low.gif' title='比较安全'></img>
+            <a href="http___192.168.13.159_20086_udaam-ui_.html" target="_blank">http://192.168.13.159:20086/udaam-ui/</a>
+            </td>
+            <td>8</td>
+            <td>4分25秒</td>
+            <td>0</td>
+            <td>0</td>
+            <td>12</td>
+            
+            <td>0</td>
+            <td>0</td>
+            
+            <td>2.1</td>
+            </tr></tbody>
+        </thead>
+    </table><table class="report_table">
+        <thead>
+        <tr class="first_title">
+            <th colspan=2>异常站点列表</th>
+        </tr>
+        <tr class="second_title">
+            <th>站点名称</th>
+            <th>异常原因</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table></div>
+</div>
+
+<div class="report_h report_h1">3.漏洞列表</div>
+<div class="report_content"><div class="report_h report_h2" id="title00">3.1漏洞分布</div>
+  <div>
+    <div style="text-align:right; vertical-align:middle;">漏洞类别：<img align="absbottom" src="reportfiles/images/vuln_low.gif">低风险[10]&nbsp;&nbsp;
+    <br>
+    <label style="float: right;">
+        <span class="right">
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            漏洞验证：可验证[0/0] &nbsp;
+        <span>
+    </label>
+    
+    </div>
+    <table id="vuln_distribution" class="report_table">
+        <thead>
+        <tr class="second_title" >
+            <th width="50px">序号</th>
+            <th>漏洞名称</th>
+            <th width="80px">影响页面个数</th>
+            <th width="60px">出现次数</th>
+        </tr>
+        </thead>
+        <tbody><tr class="odd vuln_low" style="cursor:pointer;" onclick="no_toggle('3_1_1','table_3_1_1')">
+            <td class="vuln_serial">1</td>
+            <td>
+            <img id='3_1_1' src="reportfiles/images/blank.gif" class="ico plus" ><img align='absmiddle' src='reportfiles/images/vuln_low.gif' ></img>
+            <span style='color:#737373'>检测到目标URL存在内部IP地址泄露
+            
+              
+            
+            </span>
+            </td>
+            <td class="page_vuln_count">1</td>
+            <td class="vuln_count">1</td>
+        </tr>
+        <tr class="more hide odd" id="table_3_1_1">
+        <th></th>
+        <td style="padding-left:20px" class="extend" colspan='4'>
+            <table style="white-space:pre-wrap;" class="report_table" width="100%"><tr class="odd">
+              <th width="100px">受影响站点</th>
+              <td><a href="http___192.168.13.159_20086_udaam-ui_.html" target="_blank">http://192.168.13.159:20086/udaam-ui/</a>;&nbsp</td>
+            </tr>
+            
+            
+    <tr class="even">
+        <th>详细描述</th>
+        <td>内部 IP 定义为下列 IP 范围内的 IP： 
+10.0.0.0 - 10.255.255.255 
+172.16.0.0 - 172.31.255.255 
+192.168.0.0 - 192.168.255.255 
+
+对攻击者而言，泄露内部 IP 非常有价值，因为它显示了内部网络的 IP 地址方案。知道内部网络的 IP 地址方案，可以辅助攻击者策划出对内部网络进一步的攻击。 
+</td>
+    </tr>
+    
+    
+    <tr class="odd">
+        <th>解决办法</th>
+        <td>内部 IP 通常显现在 Web 应用程序/服务器所生成的错误消息中，或显现在 HTML/JavaScript 注释中。 
+[1] 关闭 Web 应用程序/服务器中有问题的详细错误消息。 
+[2] 确保已安装相关的补丁。 
+[3] 确保内部 IP 信息未留在 HTML/JavaScript 注释中。 </td>
+    </tr>
+    
+
+    
+
+
+
+    <tr class="even">
+        <th>威胁分值</th>
+        <td>3</td>
+    </tr>
+    <tr class="odd">
+        <th>危险插件</th>
+        <td>否</td>
+    </tr>
+    <tr class="even">
+        <th>发现日期</th>
+        <td>2001-01-01</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <tr class="odd">
+        <th>CVSS评分</th>
+        <td>5.3(CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N)</td>
+    </tr>
+    
+    
+    
+            </table>
+        </td>
+        </tr><tr class="even vuln_low" style="cursor:pointer;" onclick="no_toggle('3_1_2','table_3_1_2')">
+            <td class="vuln_serial">2</td>
+            <td>
+            <img id='3_1_2' src="reportfiles/images/blank.gif" class="ico plus" ><img align='absmiddle' src='reportfiles/images/vuln_low.gif' ></img>
+            <span style='color:#737373'>检测到目标X-Content-Type-Options响应头缺失
+            
+              
+            
+            </span>
+            </td>
+            <td class="page_vuln_count">1</td>
+            <td class="vuln_count">1</td>
+        </tr>
+        <tr class="more hide even" id="table_3_1_2">
+        <th></th>
+        <td style="padding-left:20px" class="extend" colspan='4'>
+            <table style="white-space:pre-wrap;" class="report_table" width="100%"><tr class="odd">
+              <th width="100px">受影响站点</th>
+              <td><a href="http___192.168.13.159_20086_udaam-ui_.html" target="_blank">http://192.168.13.159:20086/udaam-ui/</a>;&nbsp</td>
+            </tr>
+            
+            
+    <tr class="even">
+        <th>详细描述</th>
+        <td>X-Content-Type-Options HTTP 消息头相当于一个提示标志，被服务器用来提示客户端一定要遵循在 Content-Type 首部中对  MIME 类型 的设定，而不能对其进行修改。这就禁用了客户端的 MIME 类型嗅探行为，换句话说，也就是意味着网站管理员确定自己的设置没有问题。
+
+X-Content-Type-Options响应头的缺失使得目标URL更易遭受跨站脚本攻击。</td>
+    </tr>
+    
+    
+    <tr class="odd">
+        <th>解决办法</th>
+        <td>将您的服务器配置为在所有传出请求上发送值为“nosniff”的“X-Content-Type-Options”头。对于 Apache，请参阅：
+http://httpd.apache.org/docs/2.2/mod/mod_headers.html
+对于 IIS，请参阅：
+https://technet.microsoft.com/pl-pl/library/cc753133%28v=ws.10%29.aspx
+对于 nginx，请参阅：
+http://nginx.org/en/docs/http/ngx_http_headers_module.html</td>
+    </tr>
+    
+
+    
+
+
+
+    <tr class="even">
+        <th>威胁分值</th>
+        <td>2</td>
+    </tr>
+    <tr class="odd">
+        <th>危险插件</th>
+        <td>否</td>
+    </tr>
+    <tr class="even">
+        <th>发现日期</th>
+        <td>2001-01-01</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <tr class="odd">
+        <th>CVSS评分</th>
+        <td>4.3(CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N)</td>
+    </tr>
+    
+    
+    
+            </table>
+        </td>
+        </tr><tr class="odd vuln_low" style="cursor:pointer;" onclick="no_toggle('3_1_3','table_3_1_3')">
+            <td class="vuln_serial">3</td>
+            <td>
+            <img id='3_1_3' src="reportfiles/images/blank.gif" class="ico plus" ><img align='absmiddle' src='reportfiles/images/vuln_low.gif' ></img>
+            <span style='color:#737373'>检测到目标X-XSS-Protection响应头缺失
+            
+              
+            
+            </span>
+            </td>
+            <td class="page_vuln_count">1</td>
+            <td class="vuln_count">1</td>
+        </tr>
+        <tr class="more hide odd" id="table_3_1_3">
+        <th></th>
+        <td style="padding-left:20px" class="extend" colspan='4'>
+            <table style="white-space:pre-wrap;" class="report_table" width="100%"><tr class="odd">
+              <th width="100px">受影响站点</th>
+              <td><a href="http___192.168.13.159_20086_udaam-ui_.html" target="_blank">http://192.168.13.159:20086/udaam-ui/</a>;&nbsp</td>
+            </tr>
+            
+            
+    <tr class="even">
+        <th>详细描述</th>
+        <td>HTTP X-XSS-Protection 响应头是 Internet Explorer，Chrome 和 Safari 的一个特性，当检测到跨站脚本攻击 (XSS)时，浏览器将停止加载页面。
+
+X-XSS-Protection响应头的缺失使得目标URL更易遭受跨站脚本攻击。</td>
+    </tr>
+    
+    
+    <tr class="odd">
+        <th>解决办法</th>
+        <td>将您的服务器配置为在所有传出请求上发送值为“1”（例如已启用）的“X-XSS-Protection”头。对于 Apache，请参阅：
+http://httpd.apache.org/docs/2.2/mod/mod_headers.html
+对于 IIS，请参阅：
+https://technet.microsoft.com/pl-pl/library/cc753133%28v=ws.10%29.aspx
+对于 nginx，请参阅：
+http://nginx.org/en/docs/http/ngx_http_headers_module.html</td>
+    </tr>
+    
+
+    
+
+
+
+    <tr class="even">
+        <th>威胁分值</th>
+        <td>2</td>
+    </tr>
+    <tr class="odd">
+        <th>危险插件</th>
+        <td>否</td>
+    </tr>
+    <tr class="even">
+        <th>发现日期</th>
+        <td>2001-01-01</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <tr class="odd">
+        <th>CVSS评分</th>
+        <td>4.3(CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N)</td>
+    </tr>
+    
+    
+    
+            </table>
+        </td>
+        </tr><tr class="even vuln_low" style="cursor:pointer;" onclick="no_toggle('3_1_4','table_3_1_4')">
+            <td class="vuln_serial">4</td>
+            <td>
+            <img id='3_1_4' src="reportfiles/images/blank.gif" class="ico plus" ><img align='absmiddle' src='reportfiles/images/vuln_low.gif' ></img>
+            <span style='color:#737373'>检测到目标URL存在客户端（JavaScript）Cookie引用
+            
+              
+            
+            </span>
+            </td>
+            <td class="page_vuln_count">1</td>
+            <td class="vuln_count">1</td>
+        </tr>
+        <tr class="more hide even" id="table_3_1_4">
+        <th></th>
+        <td style="padding-left:20px" class="extend" colspan='4'>
+            <table style="white-space:pre-wrap;" class="report_table" width="100%"><tr class="odd">
+              <th width="100px">受影响站点</th>
+              <td><a href="http___192.168.13.159_20086_udaam-ui_.html" target="_blank">http://192.168.13.159:20086/udaam-ui/</a>;&nbsp</td>
+            </tr>
+            
+            
+    <tr class="even">
+        <th>详细描述</th>
+        <td>Cookie通常由Web服务器创建并存储在客户端浏览器中，用来在客户端保存用户的身份标识、Session信息，甚至授权信息等。客户端JavaScript代码可以操作Cookie数据。
+
+如果在客户端使用JavaScript创建或修改站点的cookie，那么攻击者就可以查看到这些代码，通过阅读代码了解其逻辑，甚至根据自己所了解的知识将其用来修改cookie。一旦cookie包含了很重要的信息，譬如包含了权限信息等，攻击者很容易利用这些漏洞进行特权升级等攻击。</td>
+    </tr>
+    
+    
+    <tr class="odd">
+        <th>解决办法</th>
+        <td>1、避免在客户端放置业务/安全逻辑。
+2、查找并除去客户端不安全的 JavaScript 代码，该代码可能会对站点造成安全威胁。</td>
+    </tr>
+    
+
+    
+
+
+
+    <tr class="even">
+        <th>威胁分值</th>
+        <td>2</td>
+    </tr>
+    <tr class="odd">
+        <th>危险插件</th>
+        <td>否</td>
+    </tr>
+    <tr class="even">
+        <th>发现日期</th>
+        <td>2010-01-01</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <tr class="odd">
+        <th>CVSS评分</th>
+        <td>5.3(CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N)</td>
+    </tr>
+    
+    
+    
+            </table>
+        </td>
+        </tr><tr class="odd vuln_low" style="cursor:pointer;" onclick="no_toggle('3_1_5','table_3_1_5')">
+            <td class="vuln_serial">5</td>
+            <td>
+            <img id='3_1_5' src="reportfiles/images/blank.gif" class="ico plus" ><img align='absmiddle' src='reportfiles/images/vuln_low.gif' ></img>
+            <span style='color:#737373'>检测到目标Content-Security-Policy响应头缺失
+            
+              
+            
+            </span>
+            </td>
+            <td class="page_vuln_count">1</td>
+            <td class="vuln_count">1</td>
+        </tr>
+        <tr class="more hide odd" id="table_3_1_5">
+        <th></th>
+        <td style="padding-left:20px" class="extend" colspan='4'>
+            <table style="white-space:pre-wrap;" class="report_table" width="100%"><tr class="odd">
+              <th width="100px">受影响站点</th>
+              <td><a href="http___192.168.13.159_20086_udaam-ui_.html" target="_blank">http://192.168.13.159:20086/udaam-ui/</a>;&nbsp</td>
+            </tr>
+            
+            
+    <tr class="even">
+        <th>详细描述</th>
+        <td>HTTP 响应头Content-Security-Policy允许站点管理者控制用户代理能够为指定的页面加载哪些资源。除了少数例外情况，设置的政策主要涉及指定服务器的源和脚本结束点。
+
+Content-Security-Policy响应头的缺失使得目标URL更易遭受跨站脚本攻击。</td>
+    </tr>
+    
+    
+    <tr class="odd">
+        <th>解决办法</th>
+        <td>将您的服务器配置为发送“Content-Security-Policy”头。对于 Apache，请参阅：
+http://httpd.apache.org/docs/2.2/mod/mod_headers.html
+对于 IIS，请参阅：
+https://technet.microsoft.com/pl-pl/library/cc753133%28v=ws.10%29.aspx
+对于 nginx，请参阅：
+http://nginx.org/en/docs/http/ngx_http_headers_module.html</td>
+    </tr>
+    
+
+    
+
+
+
+    <tr class="even">
+        <th>威胁分值</th>
+        <td>2</td>
+    </tr>
+    <tr class="odd">
+        <th>危险插件</th>
+        <td>否</td>
+    </tr>
+    <tr class="even">
+        <th>发现日期</th>
+        <td>2001-01-01</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <tr class="odd">
+        <th>CVSS评分</th>
+        <td>4.3(CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N)</td>
+    </tr>
+    
+    
+    
+            </table>
+        </td>
+        </tr><tr class="even vuln_low" style="cursor:pointer;" onclick="no_toggle('3_1_6','table_3_1_6')">
+            <td class="vuln_serial">6</td>
+            <td>
+            <img id='3_1_6' src="reportfiles/images/blank.gif" class="ico plus" ><img align='absmiddle' src='reportfiles/images/vuln_low.gif' ></img>
+            <span style='color:#737373'>检测到目标URL存在电话号码泄露
+            
+              
+            
+            </span>
+            </td>
+            <td class="page_vuln_count">1</td>
+            <td class="vuln_count">1</td>
+        </tr>
+        <tr class="more hide even" id="table_3_1_6">
+        <th></th>
+        <td style="padding-left:20px" class="extend" colspan='4'>
+            <table style="white-space:pre-wrap;" class="report_table" width="100%"><tr class="odd">
+              <th width="100px">受影响站点</th>
+              <td><a href="http___192.168.13.159_20086_udaam-ui_.html" target="_blank">http://192.168.13.159:20086/udaam-ui/</a>;&nbsp</td>
+            </tr>
+            
+            
+    <tr class="even">
+        <th>详细描述</th>
+        <td>web应用程序响应中含有电话号码，可能被用于社会工程学攻击。</td>
+    </tr>
+    
+    
+    <tr class="odd">
+        <th>解决办法</th>
+        <td>从 Web 站点中除去电话号码，使恶意的用户无从利用。</td>
+    </tr>
+    
+
+    
+
+
+
+    <tr class="even">
+        <th>威胁分值</th>
+        <td>1</td>
+    </tr>
+    <tr class="odd">
+        <th>危险插件</th>
+        <td>否</td>
+    </tr>
+    <tr class="even">
+        <th>发现日期</th>
+        <td>2001-01-01</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <tr class="odd">
+        <th>CVSS评分</th>
+        <td>5.3(CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N)</td>
+    </tr>
+    
+    
+    
+            </table>
+        </td>
+        </tr><tr class="odd vuln_low" style="cursor:pointer;" onclick="no_toggle('3_1_7','table_3_1_7')">
+            <td class="vuln_serial">7</td>
+            <td>
+            <img id='3_1_7' src="reportfiles/images/blank.gif" class="ico plus" ><img align='absmiddle' src='reportfiles/images/vuln_low.gif' ></img>
+            <span style='color:#737373'>检测到目标网站存在无效链接
+            
+              
+            
+            </span>
+            </td>
+            <td class="page_vuln_count">1</td>
+            <td class="vuln_count">1</td>
+        </tr>
+        <tr class="more hide odd" id="table_3_1_7">
+        <th></th>
+        <td style="padding-left:20px" class="extend" colspan='4'>
+            <table style="white-space:pre-wrap;" class="report_table" width="100%"><tr class="odd">
+              <th width="100px">受影响站点</th>
+              <td><a href="http___192.168.13.159_20086_udaam-ui_.html" target="_blank">http://192.168.13.159:20086/udaam-ui/</a>;&nbsp</td>
+            </tr>
+            
+            
+    <tr class="even">
+        <th>详细描述</th>
+        <td>无效链接是指存在于页面中，但其指向的资源已经不存在。
+本漏洞属于Web应用安全常见漏洞。</td>
+    </tr>
+    
+    
+    <tr class="odd">
+        <th>解决办法</th>
+        <td>将无效链接从页面中删除。</td>
+    </tr>
+    
+
+    
+
+
+
+    <tr class="even">
+        <th>威胁分值</th>
+        <td>1</td>
+    </tr>
+    <tr class="odd">
+        <th>危险插件</th>
+        <td>否</td>
+    </tr>
+    <tr class="even">
+        <th>发现日期</th>
+        <td>2001-01-01</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <tr class="odd">
+        <th>CVSS评分</th>
+        <td>0.0(CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:N)</td>
+    </tr>
+    
+    
+    
+            </table>
+        </td>
+        </tr><tr class="even vuln_low" style="cursor:pointer;" onclick="no_toggle('3_1_8','table_3_1_8')">
+            <td class="vuln_serial">8</td>
+            <td>
+            <img id='3_1_8' src="reportfiles/images/blank.gif" class="ico plus" ><img align='absmiddle' src='reportfiles/images/vuln_low.gif' ></img>
+            <span style='color:#737373'>点击劫持：X-Frame-Options未配置
+            
+              
+            
+            </span>
+            </td>
+            <td class="page_vuln_count">1</td>
+            <td class="vuln_count">1</td>
+        </tr>
+        <tr class="more hide even" id="table_3_1_8">
+        <th></th>
+        <td style="padding-left:20px" class="extend" colspan='4'>
+            <table style="white-space:pre-wrap;" class="report_table" width="100%"><tr class="odd">
+              <th width="100px">受影响站点</th>
+              <td><a href="http___192.168.13.159_20086_udaam-ui_.html" target="_blank">http://192.168.13.159:20086/udaam-ui/</a>;&nbsp</td>
+            </tr>
+            
+            
+    <tr class="even">
+        <th>详细描述</th>
+        <td>点击劫持（ClickJacking）是一种视觉上的欺骗手段。攻击者使用一个透明的、不可见的iframe，覆盖在一个网页上，然后诱使用户在该网页上进行操作，此时用户将在不知情的情况下点击透明的iframe页面。通过调整iframe页面的位置，可以诱使用户恰好点击在iframe页面的一些功能性按钮上。
+HTTP 响应头信息中的X-Frame-Options，可以指示浏览器是否应该加载一个 iframe 中的页面。如果服务器响应头信息中没有X-Frame-Options，则该网站存在ClickJacking攻击风险。网站可以通过设置 X-Frame-Options 阻止站点内的页面被其他页面嵌入从而防止点击劫持。</td>
+    </tr>
+    
+    
+    <tr class="odd">
+        <th>解决办法</th>
+        <td>修改web服务器配置，添加X-Frame-Options响应头。赋值有如下三种：
+1、DENY：不能被嵌入到任何iframe或者frame中。
+2、SAMEORIGIN:页面只能被本站页面嵌入到iframe或者frame中。
+3、ALLOW-FROM uri：只能被嵌入到指定域名的框架中。
+例如：
+apache可配置http.conf如下：
+&lt;IfModule headers_module&gt;
+	Header always append X-Frame-Options &#34;DENY&#34;
+&lt;/IfModule&gt;
+
+IIS可配置相关网站的Web.config如下：
+&lt;system.webServer&gt;
+  ...
+
+  &lt;httpProtocol&gt;
+    &lt;customHeaders&gt;
+      &lt;add name=&#34;X-Frame-Options&#34; value=&#34;deny&#34; /&gt;
+    &lt;/customHeaders&gt;
+  &lt;/httpProtocol&gt;
+
+  ...
+&lt;/system.webServer&gt;</td>
+    </tr>
+    
+
+    
+
+
+
+    <tr class="even">
+        <th>威胁分值</th>
+        <td>1</td>
+    </tr>
+    <tr class="odd">
+        <th>危险插件</th>
+        <td>否</td>
+    </tr>
+    <tr class="even">
+        <th>发现日期</th>
+        <td>2001-01-01</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <tr class="odd">
+        <th>CVSS评分</th>
+        <td>7.3(CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L)</td>
+    </tr>
+    
+    
+    
+            </table>
+        </td>
+        </tr><tr class="odd vuln_low" style="cursor:pointer;" onclick="no_toggle('3_1_9','table_3_1_9')">
+            <td class="vuln_serial">9</td>
+            <td>
+            <img id='3_1_9' src="reportfiles/images/blank.gif" class="ico plus" ><img align='absmiddle' src='reportfiles/images/vuln_low.gif' ></img>
+            <span style='color:#737373'>检测到目标服务器可能存在系统路径信息泄露
+            
+              
+            
+            </span>
+            </td>
+            <td class="page_vuln_count">2</td>
+            <td class="vuln_count">2</td>
+        </tr>
+        <tr class="more hide odd" id="table_3_1_9">
+        <th></th>
+        <td style="padding-left:20px" class="extend" colspan='4'>
+            <table style="white-space:pre-wrap;" class="report_table" width="100%"><tr class="odd">
+              <th width="100px">受影响站点</th>
+              <td><a href="http___192.168.13.159_20086_udaam-ui_.html" target="_blank">http://192.168.13.159:20086/udaam-ui/</a>;&nbsp</td>
+            </tr>
+            
+            
+    <tr class="even">
+        <th>详细描述</th>
+        <td>检测到在服务器的响应内容中可能存在系统目录路径信息，如/home,/var或者c:\等信息，这一般是由于目标web应用没有处理好应用错误信息导致的目录路径信息泄露。
+
+如果攻击者获取到这些信息，可以了解目标服务器目录结构，给攻击者带来便利，如上传文件到服务器的其他目录。</td>
+    </tr>
+    
+    
+    <tr class="odd">
+        <th>解决办法</th>
+        <td>如果是正常页面中包含路径信息，如果不需要该路径信息，删除该信息。
+如果是错误信息中包含路径信息，需要屏蔽应用程序错误信息。</td>
+    </tr>
+    
+
+    
+
+
+
+    <tr class="even">
+        <th>威胁分值</th>
+        <td>1</td>
+    </tr>
+    <tr class="odd">
+        <th>危险插件</th>
+        <td>否</td>
+    </tr>
+    <tr class="even">
+        <th>发现日期</th>
+        <td>2001-01-01</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <tr class="odd">
+        <th>CVSS评分</th>
+        <td>5.3(CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N)</td>
+    </tr>
+    
+    
+    
+            </table>
+        </td>
+        </tr><tr class="even vuln_low" style="cursor:pointer;" onclick="no_toggle('3_1_10','table_3_1_10')">
+            <td class="vuln_serial">10</td>
+            <td>
+            <img id='3_1_10' src="reportfiles/images/blank.gif" class="ico plus" ><img align='absmiddle' src='reportfiles/images/vuln_low.gif' ></img>
+            <span style='color:#737373'>检测到目标URL存在电子邮件地址模式
+            
+              
+            
+            </span>
+            </td>
+            <td class="page_vuln_count">2</td>
+            <td class="vuln_count">2</td>
+        </tr>
+        <tr class="more hide even" id="table_3_1_10">
+        <th></th>
+        <td style="padding-left:20px" class="extend" colspan='4'>
+            <table style="white-space:pre-wrap;" class="report_table" width="100%"><tr class="odd">
+              <th width="100px">受影响站点</th>
+              <td><a href="http___192.168.13.159_20086_udaam-ui_.html" target="_blank">http://192.168.13.159:20086/udaam-ui/</a>;&nbsp</td>
+            </tr>
+            
+            
+    <tr class="even">
+        <th>详细描述</th>
+        <td>Spambot 搜寻因特网站点，开始查找电子邮件地址来构建发送自发电子邮件（垃圾邮件）的邮件列表。 
+如果检测到含有一或多个电子邮件地址的响应，可供利用以发送垃圾邮件。 
+而且，找到的电子邮件地址也可能是专用电子邮件地址，对于一般大众应是不可访问的。</td>
+    </tr>
+    
+    
+    <tr class="odd">
+        <th>解决办法</th>
+        <td>从 Web 站点中除去任何电子邮件地址，使恶意的用户无从利用。</td>
+    </tr>
+    
+
+    
+
+
+
+    <tr class="even">
+        <th>威胁分值</th>
+        <td>1</td>
+    </tr>
+    <tr class="odd">
+        <th>危险插件</th>
+        <td>否</td>
+    </tr>
+    <tr class="even">
+        <th>发现日期</th>
+        <td>2001-01-01</td>
+    </tr>
+    
+    
+    
+    
+    
+    
+    <tr class="odd">
+        <th>CVSS评分</th>
+        <td>5.3(CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N)</td>
+    </tr>
+    
+    
+    
+            </table>
+        </td>
+        </tr></tbody>
+        <tfoot>
+        <tr class='first_title'>
+            <td colspan="2">合计</td>
+            <td id="page_vuln_count_total">12</td>
+            <td id="vuln_count_total">12</td>
+        </tr>
+        </tfoot>
+    </table>
+  </div></div><div class="report_h report_h1">4.参考标准</div>
+<div class="report_content"><div class="report_h report_h2" id="title00">4.1单一漏洞风险等级评定标准</div>
+    <div>
+        <table class="report_table">
+            <tbody>
+            <tr class="second_title">
+                <td width="80px">危险程度</td>
+                <td width="150px">危险值区域</td>
+                <td>危险程度说明</td>
+            </tr>
+            <tr class="even">
+                <td><img align='absmiddle' src='reportfiles/images/vuln_high.gif' ></img></img> 高</td>
+                <td>7 &lt;= 漏洞风险值 &lt;= 10</td>
+                <td>攻击者可以远程操作系统文件、读写后台数据库、执行任意命令或进行远程拒绝服务攻击。</td>
+            </tr>
+            <tr class="odd">
+                <td><img align='absmiddle' src='reportfiles/images/vuln_middle.gif' ></img></img> 中</td>
+                <td>4 &lt;= 漏洞风险值 &lt; 7</td>
+                <td>攻击者可以利用Web网站攻击其他用户，读取系统文件或后台数据库。</td>
+            </tr>
+            <tr class="even">
+                <td><img align='absmiddle' src='reportfiles/images/vuln_low.gif' ></img></img> 低</td>
+                <td>0 &lt;= 漏洞风险值 &lt; 4</td>
+                <td>攻击者可以获取某些系统、文件的信息或冒用身份。</td>
+            </tr>
+            </tbody>
+        </table>
+        <table class="report_table">
+            <tbody><tr class="second_title">
+                <td width="80x">分值</td>
+                <td>评估标准</td>
+            </tr>
+            <tr class="even">
+                <td>1</td>
+                <td>可远程获取Web服务器组件的版本信息。</td>
+            </tr>
+            <tr class="odd">
+                <td>2</td>
+                <td>目标Web服务器开放了不必要的服务。</td>
+            </tr>
+            <tr class="even">
+                <td>3</td>
+                <td>可远程访问到某些不在目录树中的文件或读取服务器动态脚本的源码。</td>
+            </tr>
+            <tr class="odd">
+                <td>4</td>
+                <td>可远程因为会话管理的问题导致身份冒用。</td>
+            </tr>
+            <tr class="even">
+                <td>5</td>
+                <td>可远程利用受影响的Web服务器攻击其他浏览网站的用户。</td>
+            </tr>
+            <tr class="odd">
+                <td>6</td>
+                <td>可远程读取系统文件或后台数据库。</td>
+            </tr>
+            <tr class="even">
+                <td>7</td>
+                <td>可远程读写系统文件、操作后台数据库。</td>
+            </tr>
+            <tr class="odd">
+                <td>8</td>
+                <td>可远程以普通用户身份执行命令或进行拒绝服务攻击。</td>
+            </tr>
+            <tr class="even">
+                <td>9</td>
+                <td>可远程以管理用户身份执行命令（受限、不太容易利用）。</td>
+            </tr>
+            <tr class="odd">
+                <td>10</td>
+                <td>可远程以管理用户身份执行命令（不受限、容易利用）。</td>
+            </tr>
+            </tbody>
+        </table>
+    </div><div class="report_h report_h2" id="title00">4.2页面风险级别评定标准</div>
+    <div>
+      <table class="report_table">
+        <tbody>
+          <tr class="second_title">
+            <td width="100px">页面风险级别</td>
+            <td>判定标准</td>
+          </tr>
+          <tr class="even">
+            <td><span class="rect page_high"></span> 高风险</td>
+            <td>页面包含的漏洞最高级别为高危</td>
+          </tr>
+          <tr class="odd">
+            <td><span class="rect page_middle"></span> 中风险</td>
+            <td>页面包含的漏洞最高级别为中危</td>
+          </tr>
+          <tr class="even">
+            <td><span class="rect page_low"></span> 低风险</td>
+            <td>页面包含的漏洞最高级别为低危</td>
+          </tr>
+          <tr class="odd">
+            <td><span class="rect page_safe"></span> 无风险</td>
+            <td>页面不包含任何漏洞</td>
+          </tr>
+        </tbody>
+      </table>
+      <style>
+        .rect{
+            display:inline-block;
+            width:12px;
+            height:12px;
+            line-height:12px;
+        }
+        .page_high{
+            background-color:#FF5252;
+        }
+        .page_middle{
+            background-color:#FCCB2C;
+        }
+        .page_low{
+            background-color:#A5D770;
+        }
+        .page_safe{
+            background-color:#DDDDDD;
+        }
+      </style>
+    </div><div class="report_h report_h2" id="title00">4.3站点风险等级评定标准</div>
+    <div>
+      <table class="report_table">
+        <tbody>
+          <tr class="second_title">
+            <td width="80x">站点风险等级</td>
+            <td>站点风险值区域</td>
+          </tr>
+          <tr class="even">
+            <td><img align='absmiddle' src='reportfiles/images/d_high.gif' title='非常危险'></img> 非常危险</td>
+            <td>8.0 &lt;= 站点风险值 &lt;= 10</td>
+          </tr>
+          <tr class="odd">
+            <td><img align='absmiddle' src='reportfiles/images/d_middle.gif' title='比较危险'></img> 比较危险</td>
+            <td>5.0 &lt;= 站点风险值 &lt; 8.0</td>
+          </tr>
+          <tr class="even">
+            <td><img align='absmiddle' src='reportfiles/images/d_low.gif' title='比较安全'></img> 比较安全</td>
+            <td>1.0 &lt;= 站点风险值 &lt; 5.0</td>
+          </tr>
+          <tr class="odd">
+            <td><img align='absmiddle' src='reportfiles/images/d_safe.gif' title='非常安全'></img> 非常安全</td>
+            <td>0 &lt;= 站点风险值 &lt; 1.0</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>说明：</p>
+      <ol style="list-style:decimal;padding-left:40px;">
+      <li>按照远程安全评估系统的站点风险评估模型计算每个站点的站点风险值。根据得到的站点风险值参考“站点风险等级评定标准”标识站点风险等等级。</li>
+      <li>将站点风险等级按照风险值的高低进行排序，得到非常危险、比较危险、比较安全、非常安全四种站点风险等级。</li>
+      </ol>
+    </div><div class="report_h report_h2" id="title00">4.4安全建议</div>
+    <div>
+        <div>
+            <p style='text-indent: 2em;'>随着越来越多的网络访问通过Web界面进行操作，Web安全已经成为互联网安全的一个热点，基于Web的攻击广为流行，SQL注入、跨站脚本等Web应用层漏洞的存在使得网站沦陷、页面篡改、网页挂马等攻击行为困扰着网站管理者并威胁着网站以及直接用户的安全。基于此，我们可从如下几个方面来消除这些风险，做到防患于未然：</p>
+            <ul style="list-style:circle; padding-left:30px;">
+              <li>对网站的开发人员进行安全编码方面的培训，在开发过程避免漏洞的引入能起到事半功倍的效果。</li>
+              <li>请专业的安全研究人员或安全公司对架构网站的程序和代码做全面的源码审计，修补所有发现的安全漏洞，这种白盒安全测试比较全面、深入，能发现绝大部分的安全问题。</li>
+              <li>在网站上线前，使用Web应用漏洞扫描系统进行安全评估，并修补发现的问题；在网站上线后，坚持更新并使用网站安全监测系统，对整站以及关键页面进行周期和实时监测，及时消除发现的隐患。</li>
+              <li>采用专业的Web安全防火墙产品，可以在不修改网站本身的情况下对大多数的Web攻击起到有效的阻断作用，绿盟科技提供了功能强大的WAF产品，可以满足用户在这方面的需求。</li>
+              <li>建议网络管理员、系统管理员、安全管理员关注安全信息、安全动态及最新的严重漏洞，特别是影响到Web站点所使用的系统和软件的漏洞，应该在事前设计好应对规划，一旦发现系统受漏洞影响及时采取措施。</li>
+            </ul>
+        </div>
+    </div></div></div>
+  <div class="report_tip"></div>
+</div>
+<!--content end-->
+</div>
+</body>
+</html>
