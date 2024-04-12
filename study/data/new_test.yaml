@@ -1,0 +1,48 @@
+- parameters:
+    name-appid-secret-grant_type-assert_str: study/data/get_info.csv
+  name: tianxiaohan
+  body:
+    ID:
+      grant_type: father
+  requests:
+    method: POST
+    url: /cgi-bin/token
+    data: {"tag": {"id": "35", "name": "abc${getRandom()}"}}
+  extract:
+    access_token: access_token
+  validate:
+    - equals: {status_code: "jindihuayuan01"}
+    - contains: tian_35
+
+- parameters:
+    name-appid-secret-grant_type-assert_str: study/data/get_info.csv
+  name: yeyueyuan
+  body:
+    ID:
+      grant_type: mother
+  requests:
+    method: POST
+    url: /cgi-bin/token
+    data: {"tag": {"id": "34", "name": "abc${getRandom()}"}}
+  extract:
+    access_token: access_token
+  validate:
+    - equals: {status_code: "jindihuayuan01"}
+    - contains: ye_34
+
+- parameters:
+    name-appid-secret-grant_type-assert_str: study/data/get_info.csv
+  name: tianzirui
+  body:
+    ID:
+      grant_type: son
+  requests:
+    method: POST
+    url: /cgi-bin/token
+    data: {"tag": {"id": "10", "name": "abc${getRandom()}"}}
+  extract:
+    access_token: access_token
+  validate:
+    - equals: {status_code: "jindihuayuan01"}
+    - contains: tian_10
+

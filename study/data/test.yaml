@@ -1,2 +1,15 @@
-body:
-  requests: POST
+- parameters:
+    name-appid-secret-grant_type-assert_str: study/data/get_info.csv
+  name: $csv{name}
+  body:
+    ID:
+      grant_type: $csv{grant_type}
+  requests:
+    method: POST
+    url: /cgi-bin/token
+    data: {"tag": {"id": "$csv{appid}", "name": "abc${getRandom()}"}}
+  extract:
+    access_token: access_token
+  validate:
+    - equals: {status_code: "$csv{secret}"}
+    - contains: $csv{assert_str}
