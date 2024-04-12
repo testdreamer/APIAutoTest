@@ -1,6 +1,4 @@
 import os.path
-import random
-
 from jsonpath import jsonpath
 from contextlib import ExitStack
 from Utils.operationyaml import *
