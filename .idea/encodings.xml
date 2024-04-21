@@ -3,5 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/Basepage/unittestChushihua.py" charset="GBK" />
     <file url="file://$PROJECT_DIR$/Utils/log.py" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/a_udaam/data/case.yaml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/a_udaam/data/mail_config.yaml" charset="GBK" />
   </component>
 </project>

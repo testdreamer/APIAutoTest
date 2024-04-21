@@ -47,7 +47,7 @@ def get_excel_data():
 #             test_excel_data.append(test_excel_data_every)
 #     return test_excel_data
 #
-# @pytest.mark.parametrize('name',get_excel_data())
+# @test_pytest.mark.parametrize('name',get_excel_data())
 # def testc_json(name):
 #     print('本次打印的内容：%s'%name)
 #
@@ -127,7 +127,7 @@ def bug_mail_and_to_zentao(case_section,mail_title_url,request_method,url,data,r
 #         print(result)
 #         return result == item['后置处理器']
 #
-# @pytest.mark.parametrize('item', Read_Excel())
+# @test_pytest.mark.parametrize('item', Read_Excel())
 # def test_01(self, item):
 #     response_result = self.Requests_result(item)
 #     # 断言请求返回的结果是否为True

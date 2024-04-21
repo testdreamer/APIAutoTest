@@ -67,13 +67,15 @@ import math
 # print(sorted(initial_list))
 
 
-def mysort1d(a):  #采用冒泡排序
-    an=len(a)
-    for i in range(an)[::-1]:
-        for j in range(i):
-            if a[j]>a[j+1]:
-                a[j],a[j+1]=a[j+1],a[j]
-    return a
+# def mysort1d(a):  #采用冒泡排序
+#     an=len(a)
+#     for i in range(an)[::-1]:
+#         for j in range(i):
+#             if a[j]>a[j+1]:
+#                 a[j],a[j+1]=a[j+1],a[j]
+#     return a
+#
+# a=[int(i) for i in input('please input 3 number: ').split( )]
+# print(mysort1d(a))
 
-a=[int(i) for i in input('please input 3 number: ').split( )]
-print(mysort1d(a))
+

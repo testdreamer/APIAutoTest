@@ -12,6 +12,7 @@
 import runMain_udaam_a
 import os,sys
 from Utils.operationyaml import *
+import pytest
 if __name__ == '__main__':
     # os.chdir(sys.path[0])
     # pro_select_file = 'http://192.168.13.148:63805/udaam/project_name.txt'
@@ -30,3 +31,8 @@ if __name__ == '__main__':
 
 
     os.system('python runMain_udemr_s.py udaam')
+
+
+
+if __name__ == '__main__':
+    pytest.main()
