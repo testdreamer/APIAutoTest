@@ -1,0 +1,85 @@
+{
+  "uid" : "1f943d62148f558b",
+  "name" : "test_birthToLuck[caseinfo3]",
+  "fullName" : "test_pytest.testcases.test_rolemanage.TestRole#test_birthToLuck",
+  "historyId" : "814e0ee0a7bc334f1a800ef11efc81d7",
+  "time" : {
+    "start" : 1713702448271,
+    "stop" : 1713702448327,
+    "duration" : 56
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "clear_extracyaml",
+    "time" : {
+      "start" : 1713702447789,
+      "stop" : 1713702447789,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_pytest.testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_rolemanage"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestRole"
+  }, {
+    "name" : "host",
+    "value" : "Lenovo"
+  }, {
+    "name" : "thread",
+    "value" : "1528-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_pytest.testcases.test_rolemanage"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'name': '通过生日看运势-错误date格式', 'request': {'method': 'get', 'url': 'http://v.juhe.cn/laohuangli/c', 'data': {'date': 20140101, 'key': 'ef56c560a51857bd1a0e5d394345ea9c'}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': 'None'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "af0cce3885ee281d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1713702194912,
+        "stop" : 1713702195003,
+        "duration" : 91
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "smoke" ]
+  },
+  "source" : "1f943d62148f558b.json",
+  "parameterValues" : [ "{'name': '通过生日看运势-错误date格式', 'request': {'method': 'get', 'url': 'http://v.juhe.cn/laohuangli/c', 'data': {'date': 20140101, 'key': 'ef56c560a51857bd1a0e5d394345ea9c'}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': 'None'}" ]
+}

@@ -1,0 +1,135 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "test_birthToLuck",
+    "uid" : "fc46ab3bd90de133",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1713700496976,
+      "stop" : 1713700497104,
+      "duration" : 128
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_QQToLuck",
+    "uid" : "4d646c0f9945034a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1713700497109,
+      "stop" : 1713700497295,
+      "duration" : 186
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_readbirthLuck",
+    "uid" : "67d79702106e6a4e",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1713700497299,
+      "stop" : 1713700497312,
+      "duration" : 13
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_readQQLuck",
+    "uid" : "982b0b036dbffff6",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1713700497322,
+      "stop" : 1713700497327,
+      "duration" : 5
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_quit",
+    "uid" : "8bf0c4004eb9422d",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1713700497332,
+      "stop" : 1713700497332,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "test_birthToLuck[caseinfo0]",
+    "uid" : "5916cb5a8367e962",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "broken",
+    "time" : {
+      "start" : 1713702447792,
+      "stop" : 1713702447792,
+      "duration" : 0
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'name': '通过生日看运势-正常流程', 'request': {'method': 'get', 'url': 'http://v.juhe.cn/laohuangli/d', 'data': {'date': datetime.date(2014, 1, 1), 'key': 'ef56c560a51857bd1a0e5d394345ea9c'}}, 'validate': '超过每日可允许请求次数!'}" ]
+  }, {
+    "name" : "test_birthToLuck[caseinfo1]",
+    "uid" : "ac6dd1f6a058de03",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1713702448055,
+      "stop" : 1713702448161,
+      "duration" : 106
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'name': '通过生日看运势-错误method', 'request': {'method': 'post', 'url': 'http://v.juhe.cn/laohuangli/d', 'data': {'date': datetime.date(2014, 1, 1), 'key': 'ef56c560a51857bd1a0e5d394345ea9c'}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': 'None'}" ]
+  }, {
+    "name" : "test_birthToLuck[caseinfo2]",
+    "uid" : "fccba0dc1fed39e8",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1713702448179,
+      "stop" : 1713702448250,
+      "duration" : 71
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'name': '通过生日看运势-错误url', 'request': {'method': 'get', 'url': 'http://v.juhe.cn/laohuangli/c', 'data': {'date': datetime.date(2014, 1, 1), 'key': 'ef56c560a51857bd1a0e5d394345ea9c'}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': 'None'}" ]
+  }, {
+    "name" : "test_birthToLuck[caseinfo3]",
+    "uid" : "1f943d62148f558b",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1713702448271,
+      "stop" : 1713702448327,
+      "duration" : 56
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'name': '通过生日看运势-错误date格式', 'request': {'method': 'get', 'url': 'http://v.juhe.cn/laohuangli/c', 'data': {'date': 20140101, 'key': 'ef56c560a51857bd1a0e5d394345ea9c'}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': 'None'}" ]
+  }, {
+    "name" : "test_birthToLuck[caseinfo4]",
+    "uid" : "976728027151a39a",
+    "parentUid" : "b1a8273437954620fa374b796ffaacdd",
+    "status" : "passed",
+    "time" : {
+      "start" : 1713702448333,
+      "stop" : 1713702448388,
+      "duration" : 55
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ "{'name': '通过生日看运势-错误key', 'request': {'method': 'get', 'url': 'http://v.juhe.cn/laohuangli/c', 'data': {'date': datetime.date(2014, 1, 1), 'key': 'ef56c560a51857bd1a0e5d394345ea9b'}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': 'None'}" ]
+  } ]
+}

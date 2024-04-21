@@ -1,0 +1,59 @@
+-
+  name: IP定位-正常流程
+  request:
+    method: get
+    url: https://restapi.amap.com/v3/ip
+    data:
+      key: 29f3e0596cb42ad22efa0701a808d211
+      ip: 114.247.50.2
+    headers:
+      Content-Type: application/x-www-form-urlencoded
+  validate: OK
+
+-
+  name: IP定位-异常流程-method错误
+  request:
+    method: post
+    url: https://restapi.amap.com/v3/ip
+    data:
+      key: 29f3e0596cb42ad22efa0701a808d211
+      ip: 114.247.50.2
+    headers:
+      Content-Type: application/x-www-form-urlencoded
+  validate: OK
+
+-
+  name: IP定位-异常流程-ip为空
+  request:
+    method: get
+    url: https://restapi.amap.com/v3/ip
+    data:
+      key: 29f3e0596cb42ad22efa0701a808d211
+      ip:
+    headers:
+      Content-Type: application/x-www-form-urlencoded
+  validate: OK
+
+-
+  name: IP定位-异常流程-ip格式错误
+  request:
+    method: get
+    url: https://restapi.amap.com/v3/ip
+    data:
+      key: 29f3e0596cb42ad22efa0701a808d211
+      ip: 114247502
+    headers:
+      Content-Type: application/x-www-form-urlencoded
+  validate: OK
+
+-
+  name: IP定位-异常流程-key错误
+  request:
+    method: get
+    url: https://restapi.amap.com/v3/ip
+    data:
+      key: 29f3e0596cb42ad22efa0701a808d212
+      ip: 114.247.50.2
+    headers:
+      Content-Type: application/x-www-form-urlencoded
+  validate: INVALID_USER_KEY

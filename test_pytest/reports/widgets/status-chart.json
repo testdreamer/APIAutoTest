@@ -1,0 +1,101 @@
+[ {
+  "uid" : "5916cb5a8367e962",
+  "name" : "test_birthToLuck[caseinfo0]",
+  "time" : {
+    "start" : 1713702447792,
+    "stop" : 1713702447792,
+    "duration" : 0
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "fc46ab3bd90de133",
+  "name" : "test_birthToLuck",
+  "time" : {
+    "start" : 1713700496976,
+    "stop" : 1713700497104,
+    "duration" : 128
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4d646c0f9945034a",
+  "name" : "test_QQToLuck",
+  "time" : {
+    "start" : 1713700497109,
+    "stop" : 1713700497295,
+    "duration" : 186
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "982b0b036dbffff6",
+  "name" : "test_readQQLuck",
+  "time" : {
+    "start" : 1713700497322,
+    "stop" : 1713700497327,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "976728027151a39a",
+  "name" : "test_birthToLuck[caseinfo4]",
+  "time" : {
+    "start" : 1713702448333,
+    "stop" : 1713702448388,
+    "duration" : 55
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "1f943d62148f558b",
+  "name" : "test_birthToLuck[caseinfo3]",
+  "time" : {
+    "start" : 1713702448271,
+    "stop" : 1713702448327,
+    "duration" : 56
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8bf0c4004eb9422d",
+  "name" : "test_quit",
+  "time" : {
+    "start" : 1713700497332,
+    "stop" : 1713700497332,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ac6dd1f6a058de03",
+  "name" : "test_birthToLuck[caseinfo1]",
+  "time" : {
+    "start" : 1713702448055,
+    "stop" : 1713702448161,
+    "duration" : 106
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fccba0dc1fed39e8",
+  "name" : "test_birthToLuck[caseinfo2]",
+  "time" : {
+    "start" : 1713702448179,
+    "stop" : 1713702448250,
+    "duration" : 71
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "67d79702106e6a4e",
+  "name" : "test_readbirthLuck",
+  "time" : {
+    "start" : 1713700497299,
+    "stop" : 1713700497312,
+    "duration" : 13
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

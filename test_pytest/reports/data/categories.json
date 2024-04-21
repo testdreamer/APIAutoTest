@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "KeyError: 'headers'",
+      "children" : [ {
+        "name" : "test_birthToLuck[caseinfo0]",
+        "uid" : "5916cb5a8367e962",
+        "parentUid" : "93b32bc4567ff3fb85c05b5606d37258",
+        "status" : "broken",
+        "time" : {
+          "start" : 1713702447792,
+          "stop" : 1713702447792,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '通过生日看运势-正常流程', 'request': {'method': 'get', 'url': 'http://v.juhe.cn/laohuangli/d', 'data': {'date': datetime.date(2014, 1, 1), 'key': 'ef56c560a51857bd1a0e5d394345ea9c'}}, 'validate': '超过每日可允许请求次数!'}" ]
+      } ],
+      "uid" : "93b32bc4567ff3fb85c05b5606d37258"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

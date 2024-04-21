@@ -1,0 +1,59 @@
+-
+  name: 通过生日看运势-正常流程
+  request:
+    method: get
+    url: http://v.juhe.cn/laohuangli/d
+    data:
+      date: 2014-01-01
+      key: ef56c560a51857bd1a0e5d394345ea9c
+    headers:
+      Content-Type: application/x-www-form-urlencoded
+  validate: 超过每日可允许请求次数!
+
+-
+  name: 通过生日看运势-错误method
+  request:
+    method: post
+    url: http://v.juhe.cn/laohuangli/d
+    data:
+      date: 2014-01-01
+      key: ef56c560a51857bd1a0e5d394345ea9c
+    headers:
+      Content-Type: application/x-www-form-urlencoded
+  validate: None
+
+-
+  name: 通过生日看运势-错误url
+  request:
+    method: get
+    url: http://v.juhe.cn/laohuangli/c
+    data:
+      date: 2014-01-01
+      key: ef56c560a51857bd1a0e5d394345ea9c
+    headers:
+      Content-Type: application/x-www-form-urlencoded
+  validate: None
+
+-
+  name: 通过生日看运势-错误date格式
+  request:
+    method: get
+    url: http://v.juhe.cn/laohuangli/d
+    data:
+      date: 20140101
+      key: ef56c560a51857bd1a0e5d394345ea9c
+    headers:
+      Content-Type: application/x-www-form-urlencoded
+  validate: None
+
+-
+  name: 通过生日看运势-错误key
+  request:
+    method: get
+    url: http://v.juhe.cn/laohuangli/d
+    data:
+      date: 2014-01-01
+      key: ef56c560a51857bd1a0e5d394345ea9b
+    headers:
+      Content-Type: application/x-www-form-urlencoded
+  validate: None
