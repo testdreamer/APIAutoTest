@@ -40,11 +40,14 @@ class TestLbsAmap():
         result = RequestsUtils().send_request(method=method, url=url, data=data, headers=headers)
         result = json.loads(result)
         # print(result)
+        extract = YamlUtils().read_yaml_no_key(filename = self.extract_file)
         if "lives" in result:
             if result["lives"][0]:
                 if result["lives"][0]["city"] == "东城区":
-                    YamlUtils().write_yaml_add(dataurl=self.extract_file, content={"weather_city":result["lives"][0]["city"]})
-                    YamlUtils().write_yaml_add(dataurl=self.extract_file, content={"weather_adcode": result["lives"][0]["adcode"]})
+                    while "weather_city" not in str(extract):
+                        YamlUtils().write_yaml_add(dataurl=self.extract_file, content={"weather_city":result["lives"][0]["city"]})
+                        YamlUtils().write_yaml_add(dataurl=self.extract_file, content={"weather_adcode": result["lives"][0]["adcode"]})
+                        break
                     assert result["info"] == validate
                 else:
                     assert result["info"] == validate
@@ -64,11 +67,14 @@ class TestLbsAmap():
         validate = caseinfo["validate"]
         result = RequestsUtils().send_request(method=method, url=url, data=data, headers=headers)
         result = json.loads(result)
+        extract = YamlUtils().read_yaml_no_key(filename = self.extract_file)
         if "city" in result:
             if result["city"]:
                 if result["city"] == "北京市":
-                    YamlUtils().write_yaml_add(dataurl=self.extract_file, content={"IP_city": result["city"]})
-                    YamlUtils().write_yaml_add(dataurl=self.extract_file, content={"IP_adcode": result["adcode"]})
+                    while "IP_city" not in str(extract):
+                        YamlUtils().write_yaml_add(dataurl=self.extract_file, content={"IP_city": result["city"]})
+                        YamlUtils().write_yaml_add(dataurl=self.extract_file, content={"IP_adcode": result["adcode"]})
+                        break
                     assert result["info"] == validate
                 else:
                     assert result["info"] == validate
