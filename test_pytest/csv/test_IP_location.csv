@@ -1,0 +1,6 @@
+﻿name,method,url,key,ip,Content-Type,validate
+IP定位-正常流程,get,https://restapi.amap.com/v3/ip,29f3e0596cb42ad22efa0701a808d211,114.247.50.2,application/x-www-form-urlencoded,OK
+IP定位-异常流程-method错误,post,https://restapi.amap.com/v3/ip,29f3e0596cb42ad22efa0701a808d211,114.247.50.2,application/x-www-form-urlencoded,OK
+IP定位-异常流程-ip为空,get,https://restapi.amap.com/v3/ip,29f3e0596cb42ad22efa0701a808d211,,application/x-www-form-urlencoded,OK
+IP定位-异常流程-ip格式错误,get,https://restapi.amap.com/v3/ip,29f3e0596cb42ad22efa0701a808d211,114247502,application/x-www-form-urlencoded,OK
+IP定位-异常流程-key错误,get,https://restapi.amap.com/v3/ip,29f3e0596cb42ad22efa0701a808d212,114.247.50.2,application/x-www-form-urlencoded,INVALID_USER_KEY

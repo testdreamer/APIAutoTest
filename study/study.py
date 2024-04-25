@@ -79,3 +79,8 @@ import math
 # print(mysort1d(a))
 
 
+# from Utils.envreplaceyaml import *
+#
+# testfile = os.path.abspath(os.path.join(os.path.dirname(__file__), "data/test.yaml"))
+# new_testfile = os.path.abspath(os.path.join(os.path.dirname(__file__), "data/new_test.yaml"))
+# EnvReplaceYaml(testfile, new_testfile)

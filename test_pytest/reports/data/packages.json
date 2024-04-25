@@ -2,138 +2,341 @@
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "name" : "packages",
   "children" : [ {
-    "name" : "test_pytest.testcases.test_rolemanage",
+    "name" : "test_pytest.testcases",
     "children" : [ {
-      "name" : "test_birthToLuck",
-      "uid" : "fc46ab3bd90de133",
-      "parentUid" : "dd2a48f38ce0f77a89cc645f5cdb9dbc",
-      "status" : "passed",
-      "time" : {
-        "start" : 1713700496976,
-        "stop" : 1713700497104,
-        "duration" : 128
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
+      "name" : "test_juhe",
+      "children" : [ {
+        "name" : "test_birthToLuck[caseinfo0]",
+        "uid" : "7c4f893019882414",
+        "parentUid" : "0efc7c357954c60efa3ead70a859be21",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713976201006,
+          "stop" : 1713976201188,
+          "duration" : 182
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '通过生日看运势-正常流程', 'request': {'method': 'get', 'url': 'http://v.juhe.cn/laohuangli/d', 'data': {'date': datetime.date(2014, 1, 1), 'key': 'ef56c560a51857bd1a0e5d394345ea9c'}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': {'id': '1424', 'yangli': '2014-01-01', 'yinli': '癸巳(蛇)年十二月初一', 'wuxing': '剑锋金 成执位', 'chongsha': '冲虎(丙寅)煞南', 'baiji': '壬不汲水更难提防 申不安床鬼祟入房', 'jishen': '月德 母仓 三合 天喜 天医 玉堂 青龙 除神 鸣犬', 'yi': '嫁娶 祭祀 祈福 求嗣 开光 出行 解除 入宅 移徙 纳畜 入殓 破土 修坟 立碑', 'xiongshen': '大煞 九焦 九坎 土府 五离', 'ji': '伐木 作梁 动土 安床 破土 栽种 造桥'}}" ]
+      }, {
+        "name" : "test_birthToLuck[caseinfo1]",
+        "uid" : "4486d4a440ccfaf4",
+        "parentUid" : "0efc7c357954c60efa3ead70a859be21",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713976201205,
+          "stop" : 1713976201272,
+          "duration" : 67
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '通过生日看运势-错误method', 'request': {'method': 'post', 'url': 'http://v.juhe.cn/laohuangli/d', 'data': {'date': datetime.date(2014, 1, 1), 'key': 'ef56c560a51857bd1a0e5d394345ea9c'}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': {'id': '1424', 'yangli': '2014-01-01', 'yinli': '癸巳(蛇)年十二月初一', 'wuxing': '剑锋金 成执位', 'chongsha': '冲虎(丙寅)煞南', 'baiji': '壬不汲水更难提防 申不安床鬼祟入房', 'jishen': '月德 母仓 三合 天喜 天医 玉堂 青龙 除神 鸣犬', 'yi': '嫁娶 祭祀 祈福 求嗣 开光 出行 解除 入宅 移徙 纳畜 入殓 破土 修坟 立碑', 'xiongshen': '大煞 九焦 九坎 土府 五离', 'ji': '伐木 作梁 动土 安床 破土 栽种 造桥'}}" ]
+      }, {
+        "name" : "test_birthToLuck[caseinfo2]",
+        "uid" : "d987a0ae3ff2a499",
+        "parentUid" : "0efc7c357954c60efa3ead70a859be21",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713976201278,
+          "stop" : 1713976201387,
+          "duration" : 109
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '通过生日看运势-错误url', 'request': {'method': 'get', 'url': 'http://v.juhe.cn/laohuangli/c', 'data': {'date': datetime.date(2014, 1, 1), 'key': 'ef56c560a51857bd1a0e5d394345ea9c'}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': 'None'}" ]
+      }, {
+        "name" : "test_birthToLuck[caseinfo3]",
+        "uid" : "4da8ec4d9ded2e",
+        "parentUid" : "0efc7c357954c60efa3ead70a859be21",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713976201406,
+          "stop" : 1713976201476,
+          "duration" : 70
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '通过生日看运势-错误date格式', 'request': {'method': 'get', 'url': 'http://v.juhe.cn/laohuangli/d', 'data': {'date': 20140101, 'key': 'ef56c560a51857bd1a0e5d394345ea9c'}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': {'id': '1424', 'yangli': '2014-01-01', 'yinli': '癸巳(蛇)年十二月初一', 'wuxing': '剑锋金 成执位', 'chongsha': '冲虎(丙寅)煞南', 'baiji': '壬不汲水更难提防 申不安床鬼祟入房', 'jishen': '月德 母仓 三合 天喜 天医 玉堂 青龙 除神 鸣犬', 'yi': '嫁娶 祭祀 祈福 求嗣 开光 出行 解除 入宅 移徙 纳畜 入殓 破土 修坟 立碑', 'xiongshen': '大煞 九焦 九坎 土府 五离', 'ji': '伐木 作梁 动土 安床 破土 栽种 造桥'}}" ]
+      }, {
+        "name" : "test_birthToLuck[caseinfo4]",
+        "uid" : "293eb2e4994ffa1b",
+        "parentUid" : "0efc7c357954c60efa3ead70a859be21",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713976201496,
+          "stop" : 1713976201552,
+          "duration" : 56
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '通过生日看运势-错误key', 'request': {'method': 'get', 'url': 'http://v.juhe.cn/laohuangli/d', 'data': {'date': datetime.date(2014, 1, 1), 'key': 'ef56c560a51857bd1a0e5d394345ea9b'}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': 'None'}" ]
+      }, {
+        "name" : "test_QQToLuck[caseinfo0]",
+        "uid" : "195dfe369645fbb2",
+        "parentUid" : "0efc7c357954c60efa3ead70a859be21",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713976201558,
+          "stop" : 1713976201756,
+          "duration" : 198
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '通过QQ看运势-正常流程', 'request': {'method': 'post', 'url': 'http://japi.juhe.cn/qqevaluate/qq', 'data': {'qq': 522989570, 'key': '63e04654aed68eb611dc26efc4e53caa'}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': {'data': {'conclusion': '吉凶互见，一成一败，凶中有吉，吉中有凶', 'analysis': '主人性格类型：[高度戒备难交心型]，其具体表现为：经常处于戒备状态，对任何事都没法放松处理，孤僻性情难以交朋结友。对于爱情，就更加会慎重处理。任何人必须经过你长期观察及通过连番考验，方会减除戒备与你交往。'}}}" ]
+      }, {
+        "name" : "test_QQToLuck[caseinfo1]",
+        "uid" : "bc3e3e2785929a17",
+        "parentUid" : "0efc7c357954c60efa3ead70a859be21",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713976201763,
+          "stop" : 1713976201950,
+          "duration" : 187
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '通过QQ看运势-错误method', 'request': {'method': 'put', 'url': 'http://japi.juhe.cn/qqevaluate/qq', 'data': {'qq': 522989570, 'key': '63e04654aed68eb611dc26efc4e53caa'}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': {'data': {'conclusion': '吉凶互见，一成一败，凶中有吉，吉中有凶', 'analysis': '主人性格类型：[高度戒备难交心型]，其具体表现为：经常处于戒备状态，对任何事都没法放松处理，孤僻性情难以交朋结友。对于爱情，就更加会慎重处理。任何人必须经过你长期观察及通过连番考验，方会减除戒备与你交往。'}}}" ]
+      }, {
+        "name" : "test_QQToLuck[caseinfo2]",
+        "uid" : "58f43d406dc33de0",
+        "parentUid" : "0efc7c357954c60efa3ead70a859be21",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713976201973,
+          "stop" : 1713976202031,
+          "duration" : 58
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '通过QQ看运势-错误url', 'request': {'method': 'post', 'url': 'http://japi.juhe.cn/qqevaluate/qq1', 'data': {'qq': 522989570, 'key': '63e04654aed68eb611dc26efc4e53caa'}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': 404}" ]
+      }, {
+        "name" : "test_QQToLuck[caseinfo3]",
+        "uid" : "815ab9f7a9886948",
+        "parentUid" : "0efc7c357954c60efa3ead70a859be21",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713976202039,
+          "stop" : 1713976202124,
+          "duration" : 85
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '通过QQ看运势-错误date格式', 'request': {'method': 'post', 'url': 'http://japi.juhe.cn/qqevaluate/qq', 'data': {'qq': datetime.date(2014, 1, 1), 'key': '63e04654aed68eb611dc26efc4e53caa'}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': 'None'}" ]
+      }, {
+        "name" : "test_QQToLuck[caseinfo4]",
+        "uid" : "e76622098613eea6",
+        "parentUid" : "0efc7c357954c60efa3ead70a859be21",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713976202129,
+          "stop" : 1713976202219,
+          "duration" : 90
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '通过QQ看运势-错误key', 'request': {'method': 'post', 'url': 'http://japi.juhe.cn/qqevaluate/qq', 'data': {'qq': 522989570, 'key': '63e04654aed68eb611dc26efc4e53cab'}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': 'None'}" ]
+      }, {
+        "name" : "test_readbirthLuck",
+        "uid" : "63129ef9aacca379",
+        "parentUid" : "0efc7c357954c60efa3ead70a859be21",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713976202226,
+          "stop" : 1713976202230,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_readQQLuck",
+        "uid" : "5554e9b030b229e4",
+        "parentUid" : "0efc7c357954c60efa3ead70a859be21",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713976202237,
+          "stop" : 1713976202239,
+          "duration" : 2
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_quit",
+        "uid" : "e30ff266b048a8a2",
+        "parentUid" : "0efc7c357954c60efa3ead70a859be21",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713976202243,
+          "stop" : 1713976202243,
+          "duration" : 0
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "0efc7c357954c60efa3ead70a859be21"
     }, {
-      "name" : "test_QQToLuck",
-      "uid" : "4d646c0f9945034a",
-      "parentUid" : "dd2a48f38ce0f77a89cc645f5cdb9dbc",
-      "status" : "passed",
-      "time" : {
-        "start" : 1713700497109,
-        "stop" : 1713700497295,
-        "duration" : 186
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "test_readbirthLuck",
-      "uid" : "67d79702106e6a4e",
-      "parentUid" : "dd2a48f38ce0f77a89cc645f5cdb9dbc",
-      "status" : "passed",
-      "time" : {
-        "start" : 1713700497299,
-        "stop" : 1713700497312,
-        "duration" : 13
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "test_readQQLuck",
-      "uid" : "982b0b036dbffff6",
-      "parentUid" : "dd2a48f38ce0f77a89cc645f5cdb9dbc",
-      "status" : "passed",
-      "time" : {
-        "start" : 1713700497322,
-        "stop" : 1713700497327,
-        "duration" : 5
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "test_quit",
-      "uid" : "8bf0c4004eb9422d",
-      "parentUid" : "dd2a48f38ce0f77a89cc645f5cdb9dbc",
-      "status" : "passed",
-      "time" : {
-        "start" : 1713700497332,
-        "stop" : 1713700497332,
-        "duration" : 0
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ ]
-    }, {
-      "name" : "test_birthToLuck[caseinfo0]",
-      "uid" : "5916cb5a8367e962",
-      "parentUid" : "dd2a48f38ce0f77a89cc645f5cdb9dbc",
-      "status" : "broken",
-      "time" : {
-        "start" : 1713702447792,
-        "stop" : 1713702447792,
-        "duration" : 0
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "{'name': '通过生日看运势-正常流程', 'request': {'method': 'get', 'url': 'http://v.juhe.cn/laohuangli/d', 'data': {'date': datetime.date(2014, 1, 1), 'key': 'ef56c560a51857bd1a0e5d394345ea9c'}}, 'validate': '超过每日可允许请求次数!'}" ]
-    }, {
-      "name" : "test_birthToLuck[caseinfo1]",
-      "uid" : "ac6dd1f6a058de03",
-      "parentUid" : "dd2a48f38ce0f77a89cc645f5cdb9dbc",
-      "status" : "passed",
-      "time" : {
-        "start" : 1713702448055,
-        "stop" : 1713702448161,
-        "duration" : 106
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "{'name': '通过生日看运势-错误method', 'request': {'method': 'post', 'url': 'http://v.juhe.cn/laohuangli/d', 'data': {'date': datetime.date(2014, 1, 1), 'key': 'ef56c560a51857bd1a0e5d394345ea9c'}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': 'None'}" ]
-    }, {
-      "name" : "test_birthToLuck[caseinfo2]",
-      "uid" : "fccba0dc1fed39e8",
-      "parentUid" : "dd2a48f38ce0f77a89cc645f5cdb9dbc",
-      "status" : "passed",
-      "time" : {
-        "start" : 1713702448179,
-        "stop" : 1713702448250,
-        "duration" : 71
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "{'name': '通过生日看运势-错误url', 'request': {'method': 'get', 'url': 'http://v.juhe.cn/laohuangli/c', 'data': {'date': datetime.date(2014, 1, 1), 'key': 'ef56c560a51857bd1a0e5d394345ea9c'}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': 'None'}" ]
-    }, {
-      "name" : "test_birthToLuck[caseinfo3]",
-      "uid" : "1f943d62148f558b",
-      "parentUid" : "dd2a48f38ce0f77a89cc645f5cdb9dbc",
-      "status" : "passed",
-      "time" : {
-        "start" : 1713702448271,
-        "stop" : 1713702448327,
-        "duration" : 56
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "{'name': '通过生日看运势-错误date格式', 'request': {'method': 'get', 'url': 'http://v.juhe.cn/laohuangli/c', 'data': {'date': 20140101, 'key': 'ef56c560a51857bd1a0e5d394345ea9c'}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': 'None'}" ]
-    }, {
-      "name" : "test_birthToLuck[caseinfo4]",
-      "uid" : "976728027151a39a",
-      "parentUid" : "dd2a48f38ce0f77a89cc645f5cdb9dbc",
-      "status" : "passed",
-      "time" : {
-        "start" : 1713702448333,
-        "stop" : 1713702448388,
-        "duration" : 55
-      },
-      "flaky" : false,
-      "newFailed" : false,
-      "parameters" : [ "{'name': '通过生日看运势-错误key', 'request': {'method': 'get', 'url': 'http://v.juhe.cn/laohuangli/c', 'data': {'date': datetime.date(2014, 1, 1), 'key': 'ef56c560a51857bd1a0e5d394345ea9b'}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': 'None'}" ]
+      "name" : "test_lbs_amap",
+      "children" : [ {
+        "name" : "test_WeatherForecast[caseinfo0]",
+        "uid" : "cfa938eb89cd17df",
+        "parentUid" : "b69f88fe90ddd0b4651804517502b10c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713976202248,
+          "stop" : 1713976202375,
+          "duration" : 127
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '天气预报-正常流程', 'request': {'method': 'get', 'url': 'https://restapi.amap.com/v3/weather/weatherInfo', 'data': {'key': '29f3e0596cb42ad22efa0701a808d211', 'city': 110101}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': 'OK'}" ]
+      }, {
+        "name" : "test_WeatherForecast[caseinfo1]",
+        "uid" : "66a5cf3f175ff1d7",
+        "parentUid" : "b69f88fe90ddd0b4651804517502b10c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713976202393,
+          "stop" : 1713976202522,
+          "duration" : 129
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '天气预报-method错误', 'request': {'method': 'post', 'url': 'https://restapi.amap.com/v3/weather/weatherInfo', 'data': {'key': '29f3e0596cb42ad22efa0701a808d211', 'city': 130930}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': 'OK'}" ]
+      }, {
+        "name" : "test_WeatherForecast[caseinfo2]",
+        "uid" : "2cc895a4a1fd2584",
+        "parentUid" : "b69f88fe90ddd0b4651804517502b10c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713976202529,
+          "stop" : 1713976202599,
+          "duration" : 70
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '天气预报-city为空', 'request': {'method': 'get', 'url': 'https://restapi.amap.com/v3/weather/weatherInfo', 'data': {'key': '29f3e0596cb42ad22efa0701a808d211', 'city': None}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': 'INVALID_PARAMS'}" ]
+      }, {
+        "name" : "test_WeatherForecast[caseinfo3]",
+        "uid" : "94a7376612b91d95",
+        "parentUid" : "b69f88fe90ddd0b4651804517502b10c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713976202605,
+          "stop" : 1713976202712,
+          "duration" : 107
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '天气预报-city异常-不存在编码', 'request': {'method': 'get', 'url': 'https://restapi.amap.com/v3/weather/weatherInfo', 'data': {'key': '29f3e0596cb42ad22efa0701a808d211', 'city': 842123}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': 'OK'}" ]
+      }, {
+        "name" : "test_WeatherForecast[caseinfo4]",
+        "uid" : "94e2f257e76ef68b",
+        "parentUid" : "b69f88fe90ddd0b4651804517502b10c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713976202732,
+          "stop" : 1713976202873,
+          "duration" : 141
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': '天气预报-city异常-字符数超长', 'request': {'method': 'get', 'url': 'https://restapi.amap.com/v3/weather/weatherInfo', 'data': {'key': '29f3e0596cb42ad22efa0701a808d211', 'city': 1101010111232}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': 'OK'}" ]
+      }, {
+        "name" : "test_IPLocation[caseinfo0]",
+        "uid" : "226b4f22f65750c2",
+        "parentUid" : "b69f88fe90ddd0b4651804517502b10c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713976202888,
+          "stop" : 1713976202978,
+          "duration" : 90
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': 'IP定位-正常流程', 'request': {'method': 'get', 'url': 'https://restapi.amap.com/v3/ip', 'data': {'key': '29f3e0596cb42ad22efa0701a808d211', 'ip': '114.247.50.2'}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': 'OK'}" ]
+      }, {
+        "name" : "test_IPLocation[caseinfo1]",
+        "uid" : "404c102e89d0f57f",
+        "parentUid" : "b69f88fe90ddd0b4651804517502b10c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713976202983,
+          "stop" : 1713976203044,
+          "duration" : 61
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': 'IP定位-异常流程-method错误', 'request': {'method': 'post', 'url': 'https://restapi.amap.com/v3/ip', 'data': {'key': '29f3e0596cb42ad22efa0701a808d211', 'ip': '192.168.0.20'}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': 'OK'}" ]
+      }, {
+        "name" : "test_IPLocation[caseinfo2]",
+        "uid" : "7b71b1aeb6491218",
+        "parentUid" : "b69f88fe90ddd0b4651804517502b10c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713976203051,
+          "stop" : 1713976203127,
+          "duration" : 76
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': 'IP定位-异常流程-ip为空', 'request': {'method': 'get', 'url': 'https://restapi.amap.com/v3/ip', 'data': {'key': '29f3e0596cb42ad22efa0701a808d211', 'ip': None}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': 'OK'}" ]
+      }, {
+        "name" : "test_IPLocation[caseinfo3]",
+        "uid" : "9b59a24b586ead30",
+        "parentUid" : "b69f88fe90ddd0b4651804517502b10c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713976203134,
+          "stop" : 1713976203195,
+          "duration" : 61
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': 'IP定位-异常流程-ip格式错误', 'request': {'method': 'get', 'url': 'https://restapi.amap.com/v3/ip', 'data': {'key': '29f3e0596cb42ad22efa0701a808d211', 'ip': 114247502}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': 'OK'}" ]
+      }, {
+        "name" : "test_IPLocation[caseinfo4]",
+        "uid" : "5bccf5f990692642",
+        "parentUid" : "b69f88fe90ddd0b4651804517502b10c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713976203203,
+          "stop" : 1713976203271,
+          "duration" : 68
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "{'name': 'IP定位-异常流程-key错误', 'request': {'method': 'get', 'url': 'https://restapi.amap.com/v3/ip', 'data': {'key': '29f3e0596cb42ad22efa0701a808d212', 'ip': '114.247.50.2'}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': 'INVALID_USER_KEY'}" ]
+      }, {
+        "name" : "test_verify_WeatherForecast",
+        "uid" : "ae76480e49fa1d7f",
+        "parentUid" : "b69f88fe90ddd0b4651804517502b10c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713976203276,
+          "stop" : 1713976203281,
+          "duration" : 5
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_verify_IPLocation",
+        "uid" : "3a5c772d49d8e557",
+        "parentUid" : "b69f88fe90ddd0b4651804517502b10c",
+        "status" : "passed",
+        "time" : {
+          "start" : 1713976203286,
+          "stop" : 1713976203290,
+          "duration" : 4
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "b69f88fe90ddd0b4651804517502b10c"
     } ],
-    "uid" : "test_pytest.testcases.test_rolemanage"
+    "uid" : "test_pytest.testcases"
   } ]
 }

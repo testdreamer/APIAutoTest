@@ -23,7 +23,7 @@ def EnvReplaceYaml(yamlfile, new_yamlfile):
     csv_file = os.path.abspath(os.path.join(root_file, jsonpath(read_yaml_no_key(yamlfile), '$..name-appid-secret-grant_type-assert_str')[0]))
     # 读取csv中的数据
     profileList = []
-    with open(csv_file, 'r', encoding='utf') as csv_path:
+    with open(csv_file, 'r', encoding='UTF-8-sig') as csv_path:
         # csv.DictReader()
         reader = csv.DictReader(csv_path)
         for row in reader:
@@ -31,8 +31,8 @@ def EnvReplaceYaml(yamlfile, new_yamlfile):
 
     try:
         with ExitStack() as stack:
-            yml_file = stack.enter_context(open(yamlfile, '+r'))
-            yml_output = stack.enter_context(open(new_yamlfile, 'w'))
+            yml_file = stack.enter_context(open(yamlfile, '+r', encoding="utf-8"))
+            yml_output = stack.enter_context(open(new_yamlfile, 'w', encoding="utf-8"))
             # 按照lines读取yamlfile文件，返回值为字符串列表
             yml_file_lines = yml_file.readlines()
             # 循环遍历profileList的长度（即循环csv每行的数据）

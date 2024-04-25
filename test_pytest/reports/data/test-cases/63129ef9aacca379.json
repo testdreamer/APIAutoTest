@@ -1,0 +1,101 @@
+{
+  "uid" : "63129ef9aacca379",
+  "name" : "test_readbirthLuck",
+  "fullName" : "test_pytest.testcases.test_juhe.TestClass#test_readbirthLuck",
+  "historyId" : "879884b088481ab5f4c490d9afd2acd2",
+  "time" : {
+    "start" : 1713976202226,
+    "stop" : 1713976202230,
+    "duration" : 4
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "connectDB",
+    "time" : {
+      "start" : 1713976202226,
+      "stop" : 1713976202226,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "clear_extracyaml",
+    "time" : {
+      "start" : 1713976201002,
+      "stop" : 1713976201003,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "connectDB::0",
+    "time" : {
+      "start" : 1713976202231,
+      "stop" : 1713976202231,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_pytest.testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_juhe"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestClass"
+  }, {
+    "name" : "host",
+    "value" : "Lenovo"
+  }, {
+    "name" : "thread",
+    "value" : "6156-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_pytest.testcases.test_juhe"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "63129ef9aacca379.json",
+  "parameterValues" : [ ]
+}

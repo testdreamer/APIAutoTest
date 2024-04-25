@@ -1,0 +1,6 @@
+﻿name,method,url,key,city,Content-Type,validate
+天气预报-正常流程,get,https://restapi.amap.com/v3/weather/weatherInfo,29f3e0596cb42ad22efa0701a808d211,110101,application/x-www-form-urlencoded,OK
+天气预报-method错误,post,https://restapi.amap.com/v3/weather/weatherInfo,29f3e0596cb42ad22efa0701a808d211,110101,application/x-www-form-urlencoded,OK
+天气预报-city为空,get,https://restapi.amap.com/v3/weather/weatherInfo,29f3e0596cb42ad22efa0701a808d211,,application/x-www-form-urlencoded,INVALID_PARAMS
+天气预报-city异常-不存在编码,get,https://restapi.amap.com/v3/weather/weatherInfo,29f3e0596cb42ad22efa0701a808d211,842123,application/x-www-form-urlencoded,OK
+天气预报-city异常-字符数超长,get,https://restapi.amap.com/v3/weather/weatherInfo,29f3e0596cb42ad22efa0701a808d211,1101010000000,application/x-www-form-urlencoded,OK

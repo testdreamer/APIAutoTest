@@ -9,6 +9,7 @@ import os
 import pytest
 from test_pytest.Utils.operationyaml import *
 import os
+from test_pytest.Utils.envreplaceyaml import *
 
 
 
@@ -17,6 +18,62 @@ def connectDB():
     print("连接数据库成功")
     yield
     print("关闭连接数据库")
+
+# @pytest.fixture(scope="session", autouse=True)
+# def birth_replaceyaml():
+#     """
+#     对yaml文件进行解析$csv{name}
+#     yamlfile: 需要解析的yaml文件
+#     new_yamlfile: 解析成功后的yaml文件
+#     return:
+#     """
+#     new_yamlfile = os.path.abspath(os.path.join(os.path.dirname(__file__), '../birthToLuck.yml'))
+#     yamlfile = os.path.abspath(os.path.join(os.path.dirname(__file__), '../old_birthToLuck.yml'))
+#     EnvReplaceYaml(yamlfile, new_yamlfile)
+#     yield
+#     clear_yaml(new_yamlfile)
+#
+# @pytest.fixture(scope="session", autouse=True)
+# def QQ_replaceyaml():
+#     """
+#     对yaml文件进行解析$csv{name}
+#     yamlfile: 需要解析的yaml文件
+#     new_yamlfile: 解析成功后的yaml文件
+#     return:
+#     """
+#     new_yamlfile = os.path.abspath(os.path.join(os.path.dirname(__file__), '../QQToLuck.yml'))
+#     yamlfile = os.path.abspath(os.path.join(os.path.dirname(__file__), '../old_QQToLuck.yml'))
+#     EnvReplaceYaml(yamlfile, new_yamlfile)
+#     yield
+#     clear_yaml(new_yamlfile)
+#
+# @pytest.fixture(scope="session", autouse=True)
+# def IP_replaceyaml():
+#     """
+#     对yaml文件进行解析$csv{name}
+#     yamlfile: 需要解析的yaml文件
+#     new_yamlfile: 解析成功后的yaml文件
+#     return:
+#     """
+#     new_yamlfile = os.path.abspath(os.path.join(os.path.dirname(__file__), '../test_IP_location.yml'))
+#     yamlfile = os.path.abspath(os.path.join(os.path.dirname(__file__), '../old_test_IP_location.yml'))
+#     EnvReplaceYaml(yamlfile, new_yamlfile)
+#     yield
+#     clear_yaml(new_yamlfile)
+#
+# @pytest.fixture(scope="session", autouse=True)
+# def weather_replaceyaml():
+#     """
+#     对yaml文件进行解析$csv{name}
+#     yamlfile: 需要解析的yaml文件
+#     new_yamlfile: 解析成功后的yaml文件
+#     return:
+#     """
+#     new_yamlfile = os.path.abspath(os.path.join(os.path.dirname(__file__), '../test_weather_forecast.yml'))
+#     yamlfile = os.path.abspath(os.path.join(os.path.dirname(__file__), '../old_test_weather_forecast.yml'))
+#     EnvReplaceYaml(yamlfile, new_yamlfile)
+#     yield
+#     clear_yaml(new_yamlfile)
 
 @pytest.fixture(scope='session', autouse=True)
 def clear_extracyaml():

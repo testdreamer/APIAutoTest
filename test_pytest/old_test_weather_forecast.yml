@@ -1,0 +1,12 @@
+-
+  name-appid-secret-grant_type-assert_str: csv/test_weather_forecast.csv
+  name: $csv{name}
+  request:
+    method: $csv{method}
+    url: $csv{url}
+    data:
+      key: $csv{key}
+      city: $csv{city}
+    headers:
+      Content-Type: $csv{Content-Type}
+  validate: $csv{validate}

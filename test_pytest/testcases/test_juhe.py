@@ -5,45 +5,58 @@
 # @Project : APIAutoTest
 # @User : Administrator
 import pytest
+import requests
+
 from test_pytest.Utils.requestsutils import *
 from test_pytest.Utils.operationyaml import *
 import os
+from test_pytest.Utils.envreplaceyaml import *
 
 
-class TestRole():
+class TestClass():
 
-
-    session = requests.session()
     extract_file = os.path.abspath(os.path.join(os.path.dirname(__file__), '../extract.yml'))
     birthToLuck_file = os.path.abspath(os.path.join(os.path.dirname(__file__), '../birthToLuck.yml'))
     QQToLuck_file = os.path.abspath(os.path.join(os.path.dirname(__file__), '../QQToLuck.yml'))
+    old_birthToLuck_file = os.path.abspath(os.path.join(os.path.dirname(__file__), '../old_birthToLuck.yml'))
+    old_QQToLuck_file = os.path.abspath(os.path.join(os.path.dirname(__file__), '../old_QQToLuck.yml'))
+    EnvReplaceYaml(old_birthToLuck_file, birthToLuck_file)
+    EnvReplaceYaml(old_QQToLuck_file, QQToLuck_file)
+
+
+
+    # extract_file = os.path.abspath(os.path.join(os.path.dirname(__file__), '../extract.yml'))
+    # birthToLuck_file = os.path.abspath(os.path.join(os.path.dirname(__file__), '../birthToLuck.yml'))
+    # QQToLuck_file = os.path.abspath(os.path.join(os.path.dirname(__file__), '../QQToLuck.yml'))
 
     @pytest.mark.smoke
     @pytest.mark.parametrize("caseinfo", YamlUtils().read_yaml_no_key(birthToLuck_file))
     def test_birthToLuck(self, caseinfo):
 
-        # 通过生日看运势
-        # params = {
-        #     "date": "2014-01-01",
-        #     "key": "ef56c560a51857bd1a0e5d394345ea9c"
-        # }
-        # headers = {
-        #     "Content-Type": "application/x-www-form-urlencoded"
-        # }
+
         url = caseinfo["request"]["url"]
         method = caseinfo["request"]["method"]
         data = caseinfo["request"]["data"]
         headers = caseinfo["request"]["headers"]
-        result = TestRole().session.request(method=method, url=url, params=data, headers=headers)
-        result = result.json()
-        print(result)
-        # YamlUtils().write_yaml_add(self.extract_file, {"reason01":result["reason"]})
-        # result = RequestsUtils().send_request(method='get', url='http://v.juhe.cn/laohuangli/d', data=params, headers=headers)
-        # result = json.loads(result)
-        # YamlUtils().write_yaml_add(self.extract_file, {"reason01":result["reason"]["yangli"]})
-        # YamlUtils().write_yaml_add(self.extract_file, {"wuxing":result["result"]["wuxing"]})
-        # assert result["result"]["yangli"] == "2014-01-01"
-        # assert result["reason"] == "超过每日可允许请求次数!"
+        validate = caseinfo["validate"]
+
+        result = RequestsUtils().send_request(method=method, url=url, data=data, headers=headers)
+        result = json.loads(result)
+
+        # 写入关联文件extract.yml
+        extract = YamlUtils().read_yaml_no_key(filename = self.extract_file)
+        while "yangli" not in str(extract):
+            YamlUtils().write_yaml_add(dataurl=self.extract_file, content={"yangli": result["result"]["yangli"]})
+            YamlUtils().write_yaml_add(dataurl=self.extract_file, content={"wuxing": result["result"]["wuxing"]})
+            # YamlUtils().write_yaml_add(dataurl=self.extract_file, content={"content":"test"})
+            # YamlUtils().write_yaml_add(dataurl=self.extract_file, content={"content":"test"})
+            break
+
+        # 进行断言
+        if result["result"] == None:
+            assert str(result["result"]) == validate
+        else:
+            assert result["result"] == validate
 
     @pytest.mark.smoke
     @pytest.mark.parametrize("caseinfo", YamlUtils().read_yaml_no_key(QQToLuck_file))
@@ -55,43 +68,42 @@ class TestRole():
         method = caseinfo["request"]["method"]
         data = caseinfo["request"]["data"]
         headers = caseinfo["request"]["headers"]
-        # data = {
-        #     "qq": "522989570",
-        #     "key": "63e04654aed68eb611dc26efc4e53caa"
-        # }
-        # headers = {
-        #     "Content-Type": "application/x-www-form-urlencoded"
-        # }
-        # result = RequestsUtils().send_request(method='post', url=url, data=data, headers=headers)
-        # result = json.loads(result)
-        # YamlUtils().write_yaml_add(self.extract_file, {"conclusion":result["result"]["data"]["conclusion"]})
-        # assert result["reason"] == "success"
-        result = TestRole().session.request(method=method, url=url, data=data, headers=headers)
-        result = result.json()
-        print(result)
-        # YamlUtils().write_yaml_add(self.extract_file, {"reason02":result["reason"]})
-        # assert result["reason"] == "请求超过次数限制"
-    #
-    # def test_readbirthLuck(self, connectDB):
-    #
-    #     # birthday = info["yangli"]
-    #     # wuxing = info["wuxing"]
-    #     # print("出生日期为%s的人的五行运势为%s"%(birthday, wuxing))
-    #     reason01 = YamlUtils().read_yaml(filename=self.extract_file, keys="reason01")
-    #     print("五行运势为%s"%reason01)
-    #
-    # def test_readQQLuck(self):
-    #
-    #     # # QQ = info[]
-    #     # luck = info["conclusion"]
-    #     # print("此QQ号的人的运势为%s"%luck)
-    #     reason02 = YamlUtils().read_yaml(filename=self.extract_file, keys="reason02")
-    #     print("此QQ号的人的运势为%s"%reason02)
-    #
-    # @pytest.mark.smoke
-    # def test_quit(self):
-    #
-    #     print("成功退出")
+        validate = caseinfo["validate"]
 
-if __name__ == '__main__':
-    pytest.main()
+        result = RequestsUtils().send_request(method=method, url=url, data=data, headers=headers)
+        result = json.loads(result)
+        # print(result)
+
+        # 写入关联文件extract.yml
+        extract = YamlUtils().read_yaml_no_key(filename=self.extract_file)
+        if "conclusion" not in str(extract):
+            YamlUtils().write_yaml_add(dataurl=self.extract_file, content={"conclusion":result["result"]["data"]["conclusion"]})
+            # YamlUtils().write_yaml_add(dataurl=self.extract_file, content={"content":"test"})
+        else:
+            pass
+
+        # 进行断言
+        if "result" in result:
+            if result["result"] == None:
+                assert str(result["result"]) == validate
+            else:
+                assert result["result"] == validate
+        else:
+            assert result["status"] == 404
+        # assert result["reason"] == "请求超过次数限制"
+
+    def test_readbirthLuck(self, connectDB):
+
+        yangli = YamlUtils().read_yaml(filename=self.extract_file, keys="yangli")
+        wuxing = YamlUtils().read_yaml(filename=self.extract_file, keys="wuxing")
+        print("阳历%s五行运势为%s"%(yangli, wuxing))
+
+    def test_readQQLuck(self):
+
+        conclusion = YamlUtils().read_yaml(filename=self.extract_file, keys="conclusion")
+        print("此QQ号的人的运势为%s"%conclusion)
+
+    @pytest.mark.smoke
+    def test_quit(self):
+
+        print("成功退出")

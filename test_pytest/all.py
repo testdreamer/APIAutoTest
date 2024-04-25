@@ -10,5 +10,7 @@ import pytest
 
 if __name__ == '__main__':
     pytest.main(["./testcases/test_lbs_amap.py"])
-    # # 生成allure报告的命令
+    # pytest.main(["./testcases/test_juhe.py"])
+    # pytest.main()
+    # 生成allure报告的命令
     # os.system("allure generate temp -o reports --clean")

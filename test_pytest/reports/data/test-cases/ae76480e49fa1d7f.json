@@ -1,0 +1,101 @@
+{
+  "uid" : "ae76480e49fa1d7f",
+  "name" : "test_verify_WeatherForecast",
+  "fullName" : "test_pytest.testcases.test_lbs_amap.TestLbsAmap#test_verify_WeatherForecast",
+  "historyId" : "2a81d2f3b4674e7bd0e383bf72f7a4b5",
+  "time" : {
+    "start" : 1713976203276,
+    "stop" : 1713976203281,
+    "duration" : 5
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "connectDB",
+    "time" : {
+      "start" : 1713976203276,
+      "stop" : 1713976203276,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  }, {
+    "name" : "clear_extracyaml",
+    "time" : {
+      "start" : 1713976201002,
+      "stop" : 1713976201003,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "connectDB::0",
+    "time" : {
+      "start" : 1713976203282,
+      "stop" : 1713976203282,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_pytest.testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_lbs_amap"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLbsAmap"
+  }, {
+    "name" : "host",
+    "value" : "Lenovo"
+  }, {
+    "name" : "thread",
+    "value" : "6156-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_pytest.testcases.test_lbs_amap"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ae76480e49fa1d7f.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,77 @@
+{
+  "uid" : "94e2f257e76ef68b",
+  "name" : "test_WeatherForecast[caseinfo4]",
+  "fullName" : "test_pytest.testcases.test_lbs_amap.TestLbsAmap#test_WeatherForecast",
+  "historyId" : "23eb2adec46ca90ea63868b9c26a2356",
+  "time" : {
+    "start" : 1713976202732,
+    "stop" : 1713976202873,
+    "duration" : 141
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "clear_extracyaml",
+    "time" : {
+      "start" : 1713976201002,
+      "stop" : 1713976201003,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_pytest.testcases"
+  }, {
+    "name" : "suite",
+    "value" : "test_lbs_amap"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLbsAmap"
+  }, {
+    "name" : "host",
+    "value" : "Lenovo"
+  }, {
+    "name" : "thread",
+    "value" : "6156-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_pytest.testcases.test_lbs_amap"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "caseinfo",
+    "value" : "{'name': '天气预报-city异常-字符数超长', 'request': {'method': 'get', 'url': 'https://restapi.amap.com/v3/weather/weatherInfo', 'data': {'key': '29f3e0596cb42ad22efa0701a808d211', 'city': 1101010111232}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': 'OK'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "smoke" ]
+  },
+  "source" : "94e2f257e76ef68b.json",
+  "parameterValues" : [ "{'name': '天气预报-city异常-字符数超长', 'request': {'method': 'get', 'url': 'https://restapi.amap.com/v3/weather/weatherInfo', 'data': {'key': '29f3e0596cb42ad22efa0701a808d211', 'city': 1101010111232}, 'headers': {'Content-Type': 'application/x-www-form-urlencoded'}}, 'validate': 'OK'}" ]
+}

@@ -1,0 +1,12 @@
+-
+  name-appid-secret-grant_type-assert_str: csv/test_IP_location.csv
+  name: $csv{name}
+  request:
+    method: $csv{method}
+    url: $csv{url}
+    data:
+      key: $csv{key}
+      ip: $csv{ip}
+    headers:
+      Content-Type: $csv{Content-Type}
+  validate: $csv{validate}

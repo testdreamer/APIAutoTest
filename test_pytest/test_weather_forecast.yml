@@ -1,4 +1,5 @@
 -
+  name-appid-secret-grant_type-assert_str: csv/test_weather_forecast.csv
   name: 天气预报-正常流程
   request:
     method: get
@@ -11,6 +12,7 @@
   validate: OK
 
 -
+  name-appid-secret-grant_type-assert_str: csv/test_weather_forecast.csv
   name: 天气预报-method错误
   request:
     method: post
@@ -20,21 +22,23 @@
       city: 110101
     headers:
       Content-Type: application/x-www-form-urlencoded
-  validate: INVALID_PARAMS
+  validate: OK
 
 -
+  name-appid-secret-grant_type-assert_str: csv/test_weather_forecast.csv
   name: 天气预报-city为空
   request:
     method: get
     url: https://restapi.amap.com/v3/weather/weatherInfo
     data:
       key: 29f3e0596cb42ad22efa0701a808d211
-      city:
+      city: 
     headers:
       Content-Type: application/x-www-form-urlencoded
   validate: INVALID_PARAMS
 
 -
+  name-appid-secret-grant_type-assert_str: csv/test_weather_forecast.csv
   name: 天气预报-city异常-不存在编码
   request:
     method: get
@@ -47,13 +51,15 @@
   validate: OK
 
 -
+  name-appid-secret-grant_type-assert_str: csv/test_weather_forecast.csv
   name: 天气预报-city异常-字符数超长
   request:
     method: get
     url: https://restapi.amap.com/v3/weather/weatherInfo
     data:
       key: 29f3e0596cb42ad22efa0701a808d211
-      city: 1101010111232
+      city: 1101010000000
     headers:
       Content-Type: application/x-www-form-urlencoded
   validate: OK
+

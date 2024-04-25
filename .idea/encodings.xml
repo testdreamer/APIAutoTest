@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" defaultCharsetForPropertiesFiles="GBK">
     <file url="file://$PROJECT_DIR$/Basepage/unittestChushihua.py" charset="GBK" />
     <file url="file://$PROJECT_DIR$/Utils/log.py" charset="GBK" />
     <file url="file://$PROJECT_DIR$/a_udaam/data/case.yaml" charset="GBK" />
     <file url="file://$PROJECT_DIR$/a_udaam/data/mail_config.yaml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/test_pytest/QQToLuck.yml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/test_pytest/birthToLuck01.yml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/test_pytest/test_IP_location.yml" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/test_pytest/test_weather_forecast.yml" charset="GBK" />
   </component>
 </project>

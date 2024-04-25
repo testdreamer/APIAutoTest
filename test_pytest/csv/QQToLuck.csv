@@ -1,0 +1,6 @@
+﻿name,method,url,qq,key,Content-Type,validate
+通过QQ看运势-正常流程,post,http://japi.juhe.cn/qqevaluate/qq,522989570,63e04654aed68eb611dc26efc4e53caa,application/x-www-form-urlencoded,"{'data': {'conclusion': '吉凶互见，一成一败，凶中有吉，吉中有凶', 'analysis': '主人性格类型：[高度戒备难交心型]，其具体表现为：经常处于戒备状态，对任何事都没法放松处理，孤僻性情难以交朋结友。对于爱情，就更加会慎重处理。任何人必须经过你长期观察及通过连番考验，方会减除戒备与你交往。'}}"
+通过QQ看运势-错误method,put,http://japi.juhe.cn/qqevaluate/qq,522989570,63e04654aed68eb611dc26efc4e53caa,application/x-www-form-urlencoded,"{'data': {'conclusion': '吉凶互见，一成一败，凶中有吉，吉中有凶', 'analysis': '主人性格类型：[高度戒备难交心型]，其具体表现为：经常处于戒备状态，对任何事都没法放松处理，孤僻性情难以交朋结友。对于爱情，就更加会慎重处理。任何人必须经过你长期观察及通过连番考验，方会减除戒备与你交往。'}}"
+通过QQ看运势-错误url,post,http://japi.juhe.cn/qqevaluate/qq1,522989570,63e04654aed68eb611dc26efc4e53caa,application/x-www-form-urlencoded,404
+通过QQ看运势-错误date格式,post,http://japi.juhe.cn/qqevaluate/qq,2014/1/1,63e04654aed68eb611dc26efc4e53caa,application/x-www-form-urlencoded,None
+通过QQ看运势-错误key,post,http://japi.juhe.cn/qqevaluate/qq,522989570,63e04654aed68eb611dc26efc4e53cab,application/x-www-form-urlencoded,None

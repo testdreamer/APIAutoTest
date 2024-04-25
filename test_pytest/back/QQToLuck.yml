@@ -1,0 +1,59 @@
+-
+  name: 通过QQ看运势-正常流程
+  request:
+    method: post
+    url: http://japi.juhe.cn/qqevaluate/qq
+    data:
+      qq: 522989570
+      key: 63e04654aed68eb611dc26efc4e53caa
+    headers:
+      Content-Type: application/x-www-form-urlencoded
+  validate: {'data': {'conclusion': '吉凶互见，一成一败，凶中有吉，吉中有凶', 'analysis': '主人性格类型：[高度戒备难交心型]，其具体表现为：经常处于戒备状态，对任何事都没法放松处理，孤僻性情难以交朋结友。对于爱情，就更加会慎重处理。任何人必须经过你长期观察及通过连番考验，方会减除戒备与你交往。'}}
+
+-
+  name: 通过QQ看运势-错误method
+  request:
+    method: put
+    url: http://japi.juhe.cn/qqevaluate/qq
+    data:
+      qq: 522989570
+      key: 63e04654aed68eb611dc26efc4e53caa
+    headers:
+      Content-Type: application/x-www-form-urlencoded
+  validate: {'data': {'conclusion': '吉凶互见，一成一败，凶中有吉，吉中有凶', 'analysis': '主人性格类型：[高度戒备难交心型]，其具体表现为：经常处于戒备状态，对任何事都没法放松处理，孤僻性情难以交朋结友。对于爱情，就更加会慎重处理。任何人必须经过你长期观察及通过连番考验，方会减除戒备与你交往。'}}
+
+-
+  name: 通过QQ看运势-错误url
+  request:
+    method: post
+    url: http://japi.juhe.cn/qqevaluate/qq1
+    data:
+      qq: 522989570
+      key: 63e04654aed68eb611dc26efc4e53caa
+    headers:
+      Content-Type: application/x-www-form-urlencoded
+  validate: 404
+
+-
+  name: 通过QQ看运势-错误date格式
+  request:
+    method: post
+    url: http://japi.juhe.cn/qqevaluate/qq
+    data:
+      qq: 2014-01-01
+      key: 63e04654aed68eb611dc26efc4e53caa
+    headers:
+      Content-Type: application/x-www-form-urlencoded
+  validate: None
+
+-
+  name: 通过QQ看运势-错误key
+  request:
+    method: post
+    url: http://japi.juhe.cn/qqevaluate/qq
+    data:
+      qq: 522989570
+      key: 63e04654aed68eb611dc26efc4e53cab
+    headers:
+      Content-Type: application/x-www-form-urlencoded
+  validate: None

@@ -1,0 +1,59 @@
+-
+  name: 天气预报-正常流程
+  request:
+    method: get
+    url: https://restapi.amap.com/v3/weather/weatherInfo
+    data:
+      key: 29f3e0596cb42ad22efa0701a808d211
+      city: 110101
+    headers:
+      Content-Type: application/x-www-form-urlencoded
+  validate: OK
+
+-
+  name: 天气预报-method错误
+  request:
+    method: post
+    url: https://restapi.amap.com/v3/weather/weatherInfo
+    data:
+      key: 29f3e0596cb42ad22efa0701a808d211
+      city: 130930
+    headers:
+      Content-Type: application/x-www-form-urlencoded
+  validate: OK
+
+-
+  name: 天气预报-city为空
+  request:
+    method: get
+    url: https://restapi.amap.com/v3/weather/weatherInfo
+    data:
+      key: 29f3e0596cb42ad22efa0701a808d211
+      city:
+    headers:
+      Content-Type: application/x-www-form-urlencoded
+  validate: INVALID_PARAMS
+
+-
+  name: 天气预报-city异常-不存在编码
+  request:
+    method: get
+    url: https://restapi.amap.com/v3/weather/weatherInfo
+    data:
+      key: 29f3e0596cb42ad22efa0701a808d211
+      city: 842123
+    headers:
+      Content-Type: application/x-www-form-urlencoded
+  validate: OK
+
+-
+  name: 天气预报-city异常-字符数超长
+  request:
+    method: get
+    url: https://restapi.amap.com/v3/weather/weatherInfo
+    data:
+      key: 29f3e0596cb42ad22efa0701a808d211
+      city: 1101010111232
+    headers:
+      Content-Type: application/x-www-form-urlencoded
+  validate: OK

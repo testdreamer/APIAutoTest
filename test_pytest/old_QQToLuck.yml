@@ -1,0 +1,12 @@
+-
+  name-appid-secret-grant_type-assert_str: csv/QQToLuck.csv
+  name: $csv{name}
+  request:
+    method: $csv{method}
+    url: $csv{url}
+    data:
+      qq: $csv{qq}
+      key: $csv{key}
+    headers:
+      Content-Type: $csv{Content-Type}
+  validate: $csv{validate}
