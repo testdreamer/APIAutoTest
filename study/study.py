@@ -30,7 +30,7 @@ import math
 # bonus = function_02(90)
 # print(bonus)
 
-# print(math.sqrt(169))
+print(math.sqrt(169))
 
 # t = []
 # for m in range(168):
